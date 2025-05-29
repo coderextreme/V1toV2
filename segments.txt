@@ -1,0 +1,10 @@
+l_metatarsal_1
+l_metatarsal_2
+l_metatarsal_3
+l_metatarsal_4
+l_metatarsal_5
+r_metatarsal_1
+r_metatarsal_2
+r_metatarsal_3
+r_metatarsal_4
+r_metatarsal_5

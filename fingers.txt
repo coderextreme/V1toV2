@@ -1,0 +1,73 @@
+    # Fingers (V1 often used simplified names like l_thumb1, l_thumb2, l_thumb3)
+    # Mapping these requires knowing what l_thumb1 corresponded to (MCP, PIP, or DIP)
+    # Common assumption: 1=MCP, 2=PIP, 3=DIP for thumb
+    # Common assumption: 0=MCP, 1=PIP, 2=DIP for other fingers
+    # Thumb
+    ("l_thumb_metacarpophalangeal", "l_metacarpophalangeal_1"),
+    ("r_thumb_metacarpophalangeal", "r_metacarpophalangeal_1"),
+    ("l_thumb1", "l_metacarpophalangeal_1"), # V1 simplified
+    ("r_thumb1", "r_metacarpophalangeal_1"),
+    ("l_thumb_proximal_interphalangeal", "l_proximal_interphalangeal_1"),
+    ("r_thumb_proximal_interphalangeal", "r_proximal_interphalangeal_1"),
+    ("l_thumb2", "l_proximal_interphalangeal_1"), # V1 simplified
+    ("r_thumb2", "r_proximal_interphalangeal_1"),
+    ("l_thumb_distal_interphalangeal", "l_distal_interphalangeal_1"),
+    ("r_thumb_distal_interphalangeal", "r_distal_interphalangeal_1"),
+    ("l_thumb3", "l_distal_interphalangeal_1"), # V1 simplified
+    ("r_thumb3", "r_distal_interphalangeal_1"),
+
+    # Index Finger
+    ("l_index_metacarpophalangeal", "l_metacarpophalangeal_2"),
+    ("r_index_metacarpophalangeal", "r_metacarpophalangeal_2"),
+    ("l_index0", "l_metacarpophalangeal_2"), # V1 simplified MCP
+    ("r_index0", "r_metacarpophalangeal_2"),
+    ("l_index_proximal_interphalangeal", "l_proximal_interphalangeal_2"),
+    ("r_index_proximal_interphalangeal", "r_proximal_interphalangeal_2"),
+    ("l_index1", "l_proximal_interphalangeal_2"), # V1 simplified PIP
+    ("r_index1", "r_proximal_interphalangeal_2"),
+    ("l_index_distal_interphalangeal", "l_distal_interphalangeal_2"),
+    ("r_index_distal_interphalangeal", "r_distal_interphalangeal_2"),
+    ("l_index2", "l_distal_interphalangeal_2"), # V1 simplified DIP
+    ("r_index2", "r_distal_interphalangeal_2"),
+
+    # Middle Finger
+    ("l_middle_metacarpophalangeal", "l_metacarpophalangeal_3"),
+    ("r_middle_metacarpophalangeal", "r_metacarpophalangeal_3"),
+    ("l_middle0", "l_metacarpophalangeal_3"),
+    ("r_middle0", "r_metacarpophalangeal_3"),
+    ("l_middle_proximal_interphalangeal", "l_proximal_interphalangeal_3"),
+    ("r_middle_proximal_interphalangeal", "r_proximal_interphalangeal_3"),
+    ("l_middle1", "l_proximal_interphalangeal_3"),
+    ("r_middle1", "r_proximal_interphalangeal_3"),
+    ("l_middle_distal_interphalangeal", "l_distal_interphalangeal_3"),
+    ("r_middle_distal_interphalangeal", "r_distal_interphalangeal_3"),
+    ("l_middle2", "l_distal_interphalangeal_3"),
+    ("r_middle2", "r_distal_interphalangeal_3"),
+
+    # Ring Finger
+    ("l_ring_metacarpophalangeal", "l_metacarpophalangeal_4"),
+    ("r_ring_metacarpophalangeal", "r_metacarpophalangeal_4"),
+    ("l_ring0", "l_metacarpophalangeal_4"),
+    ("r_ring0", "r_metacarpophalangeal_4"),
+    ("l_ring_proximal_interphalangeal", "l_proximal_interphalangeal_4"),
+    ("r_ring_proximal_interphalangeal", "r_proximal_interphalangeal_4"),
+    ("l_ring1", "l_proximal_interphalangeal_4"),
+    ("r_ring1", "r_proximal_interphalangeal_4"),
+    ("l_ring_distal_interphalangeal", "l_distal_interphalangeal_4"),
+    ("r_ring_distal_interphalangeal", "r_distal_interphalangeal_4"),
+    ("l_ring2", "l_distal_interphalangeal_4"),
+    ("r_ring2", "r_distal_interphalangeal_4"),
+
+    # Pinky Finger (Little Finger)
+    ("l_pinky_metacarpophalangeal", "l_metacarpophalangeal_5"),
+    ("r_pinky_metacarpophalangeal", "r_metacarpophalangeal_5"),
+    ("l_pinky0", "l_metacarpophalangeal_5"),
+    ("r_pinky0", "r_metacarpophalangeal_5"),
+    ("l_pinky_proximal_interphalangeal", "l_proximal_interphalangeal_5"),
+    ("r_pinky_proximal_interphalangeal", "r_proximal_interphalangeal_5"),
+    ("l_pinky1", "l_proximal_interphalangeal_5"),
+    ("r_pinky1", "r_proximal_interphalangeal_5"),
+    ("l_pinky_distal_interphalangeal", "l_distal_interphalangeal_5"),
+    ("r_pinky_distal_interphalangeal", "r_distal_interphalangeal_5"),
+    ("l_pinky2", "l_distal_interphalangeal_5"),
+    ("r_pinky2", "r_distal_interphalangeal_5"),

@@ -1,0 +1,1146 @@
+﻿#X3D V3.0 utf8
+PROFILE Immersive
+COMPONENT H-Anim:1
+
+META "Joe" "No Reservations 20121221 20040109 x3d/hanim"
+
+WorldInfo {
+ title "HANIM 2 LOA3 Skeleton and Skin sites and feature points for Joe_ by Joe"
+}
+
+NavigationInfo {
+ headlight FALSE speed 2.5 type [ "FLY" "ANY" ]
+}
+
+DEF Joe_InclinedView Viewpoint { description "Joe_Inclined View"
+ position 1.62 1.05 3.06 orientation -0.113 0.993 0.0347 0.671 centerOfRotation 0 0 0
+}
+DEF Joe_IFrontView Viewpoint { description "Scene_Front View"
+ position 0 0.8 2.58 orientation 0 0 1 0 centerOfRotation 0 0.8 0
+}
+DEF Joe_ISideView Viewpoint { description "Scene_Side View"
+ position 2.6 0.5 0 orientation 0 1 0 1.5708 centerOfRotation 0 0.8 0
+}
+DEF Joe_BackView Viewpoint { description "Scene_Back View"
+ position 0 2.5 -3 orientation 0 1 0 3.14 centerOfRotation 0 1.5 0
+}
+DEF Joe_TopView Viewpoint { description "Scene_Top View"
+ position 0 3.5 0 orientation 1 0 0 -1.5708 centerOfRotation 0 1.5 0
+}
+
+DEF Joe_Humanoid Group { children [
+
+#DirectionalLight { direction 0 1 1 }
+#DirectionalLight { direction -1 -1 -1 }
+#DirectionalLight { direction 1 1 -1 }
+
+ DEF JoeHuman HAnimHumanoid { center 0 0 0 rotation 0 0 1 0 scale 1 1 1
+  skeleton [
+   DEF Joe_humanoid_root HAnimJoint { name "humanoid_root" center 0.0 0.875 0.0 skinCoordIndex [  ] skinCoordWeight [  ] children [
+    DEF Joe_RootView1 HAnimSite { name "RootFront" translation 0.0 0.0 0.0 children [ DEF hanimcordsys Transform { scale 0.175 0.175 0.175 children [ Inline { url ["JointCoordinateAxes.x3dv"] } DEF ballView Viewpoint { description "hanimcoord View" } ] } ] }
+    DEF Joe_sacroiliac HAnimJoint { name "sacroiliac" center 0.0 0.92 0.0 skinCoordIndex [ 17 19 20 21 22 23 26 27 73 82 89 91 93 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 1 0.35 0.35 1 ] children [
+     DEF Joe_l_hip HAnimJoint { name "l_hip" center 0.1 0.92 0.0 skinCoordIndex [ 89 90 94 95 96 97 ] skinCoordWeight [ 0.65 1 1 1 1 1 ] children [
+      DEF Joe_l_knee HAnimJoint { name "l_knee" center 0.115 0.466 0.0 skinCoordIndex [ 334 335 336 337 338 339 340 341 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 ] children [
+       DEF Joe_l_talocrural HAnimJoint { name "l_talocrural" center 0.115 0.069 0.0 skinCoordIndex [ 342 343 344 345 ] skinCoordWeight [ 1 1 1 1 ] children [
+        DEF Joe_l_tarsometatarsal_2 HAnimJoint { name "l_tarsometatarsal_2" center 0.115 0.031 0.03 skinCoordIndex [ 346 347 348 71 ] skinCoordWeight [ 1 1 1 1 ] children [
+         DEF Joe_l_metatarsophalangeal_2 HAnimJoint { name "l_metatarsophalangeal_2" center 0.115 0.037 0.09 skinCoordIndex [349 350 351 352 ] skinCoordWeight [ 1 1 1 1 ] children [
+          DEF Joe_l_metatarsal_2 HAnimJoint { name "l_metatarsal_2" center 0.115 0.02 0.122 skinCoordIndex [ 353 354 355 356 357 358 359 360 361 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]} ]} ]} ]}
+     DEF Joe_r_hip HAnimJoint { name "r_hip" center -0.1 0.92 0.0 skinCoordIndex [ 91 92 98 99 100 101 362 363 ] skinCoordWeight [ 0.65 1 0.8 1 1 1 0.4 0.8 ] children [
+      DEF Joe_r_knee HAnimJoint { name "r _knee" center -0.05 0.466 0.0 skinCoordIndex [ 362 363 364 365 366 367 368 369 98 ] skinCoordWeight [ 0.6 0.2 1 1 1 1 1 1 0.2 ] children [
+       DEF Joe_r_talocrural HAnimJoint { name "r_talocrural" center -0.115 0.069 0.0 skinCoordIndex [ 370 371 372 373 ] skinCoordWeight [ 1 1 1 1 ] children [
+        DEF Joe_r_tarsometatarsal_2 HAnimJoint { name "r_tarsometatarsal_2" center -0.1 0.015 -0.01 skinCoordIndex [374 375 376 ] skinCoordWeight [ 1 1 1 ] children [
+         DEF Joe_r_metatarsophalangeal_2 HAnimJoint { name "r_metatarsophalangeal_2" center -0.115 0.037 0.09 skinCoordIndex [ 377 378 379 380 ] skinCoordWeight [ 1 1 1 1 ] children [
+          DEF Joe_r_tarsal_distal_interphalangeal_2 HAnimJoint { name "r_tarsal_distal_interphalangeal_2" center -0.1 0.01 0.14 skinCoordIndex [ 381 382 383 384 385 386 387 388 389 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]} ]} ]} ]} ]}
+    DEF Joe_vl5 HAnimJoint { name "vl5" center 0.0 1.045 -0.095 skinCoordIndex [ 28 76 ] skinCoordWeight [ 1 1 ] children [
+     DEF Joe_vl4 HAnimJoint { name "vl4" center 0.0 1.068 -0.085 skinCoordIndex [  ] skinCoordWeight [  ] children [
+      DEF Joe_vl3 HAnimJoint { name "vl3" center 0.0 1.092 -0.0725 skinCoordIndex [  ] skinCoordWeight [  ] children [
+       DEF Joe_vl2 HAnimJoint { name "vl2" center 0.0 1.12 -0.065 skinCoordIndex [ 16 18 25 83 84 85 86 87 88 ] skinCoordWeight [ 1 1 1 1 1 1 0.7 1 0.8 ] children [
+        DEF Joe_vl1 HAnimJoint { name "vl1" center 0.0 1.1459 -0.0625 skinCoordIndex [  ] skinCoordWeight [  ] children [
+         DEF Joe_vt12 HAnimJoint { name "vt12" center 0.0 1.179 -0.068 skinCoordIndex [  ] skinCoordWeight [  ] children [
+          DEF Joe_vt11 HAnimJoint { name "vt11" center 0.0 1.2679 -0.0810 skinCoordIndex [  ] skinCoordWeight [  ] children [
+           DEF Joe_vt10 HAnimJoint { name "vt10" center 0.0 1.242 -0.09 skinCoordIndex [ 15 ] skinCoordWeight [ 1 ] children [
+            DEF Joe_vt9 HAnimJoint { name "vt9" center 0.0 1.268 -0.1 skinCoordIndex [ 13 14 ] skinCoordWeight [ 1 1 ] children [
+             DEF Joe_vt8 HAnimJoint { name "vt8" center 0.0 1.294 -0.11 skinCoordIndex [  ] skinCoordWeight [  ] children [
+              DEF Joe_vt7 HAnimJoint { name "vt7" center 0.0 1.323 -0.1155 skinCoordIndex [  ] skinCoordWeight [  ] children [
+               DEF Joe_vt6 HAnimJoint { name "vt6" center 0.0 1.352 -0.12 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                DEF Joe_vt5 HAnimJoint { name "vt5" center 0.0 1.381 -0.1235 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                 DEF Joe_vt4 HAnimJoint { name "vt4" center 0.0 1.41 -0.1235 skinCoordIndex [ 81 ] skinCoordWeight [ 1  ] children [
+                  DEF Joe_vt3 HAnimJoint { name "vt3" center 0.0 1.438 -0.12 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                   DEF Joe_vt2 HAnimJoint { name "vt2" center 0.0 1.468 -0.105 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                    DEF Joe_vt1 HAnimJoint { name "vt1" center 0.0 1.497 -0.09 skinCoordIndex [ 11 24 ] skinCoordWeight [ 1 1 ] children [
+                     DEF Joe_vc7 HAnimJoint { name "vc7" center 0.0 1.525 -0.072 skinCoordIndex [ 74 75 ] skinCoordWeight [ 1 1 ] children [
+                      DEF Joe_vc6 HAnimJoint { name "vc6" center 0.0 1.54 -0.05 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                       DEF Joe_vc5 HAnimJoint { name "vc5" center 0.0 1.552 -0.035 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                        DEF Joe_vc4 HAnimJoint { name "vc4" center 0.0 1.5675 -0.0256 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                         DEF Joe_vc3 HAnimJoint { name "vc3" center 0.0 1.58225 -0.0185 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                          DEF Joe_vc2 HAnimJoint { name "vc2" center 0.0 1.595 -0.0175 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                           DEF Joe_vc1 HAnimJoint { name "vc1" center 0.0 1.61 -0.015 skinCoordIndex [  ] skinCoordWeight [  ] children [
+                            DEF Joe_skullbase HAnimJoint { name "skullbase" center 0.0 1.63 -0.01 skinCoordIndex [ 0 1 2 3 4 5 6 7 8 9 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 1 ] children [
+                             DEF Joe_l_eyeball_joint HAnimJoint { name "l_eyeball_joint" center 0.034 1.659 0.06 skinCoordIndex [  ] skinCoordWeight  [  ] children [ ]}
+                             DEF Joe_r_eyeball_joint HAnimJoint { name "r_eyeball_joint" center -0.034 1.659 0.06 skinCoordIndex [  ] skinCoordWeight  [  ] children [ ]} ]} ]} ]} ]} ]} ]} ]}
+                     DEF Joe_l_sternoclavicular HAnimJoint { name "l_sternoclavicular" center 0.0820 1.4488 -0.0353 skinCoordIndex [ 12 ] skinCoordWeight [ 1 ] children [
+                      DEF Joe_l_acromioclavicular HAnimJoint { name "l_acromioclavicular" center 0.0962 1.4269 -0.0424 skinCoordIndex [ 79 ] skinCoordWeight [ 1 ] children [
+                       DEF Joe_l_shoulder HAnimJoint { name "l_shoulder" center 0.2 1.44 -0.04 skinCoordIndex [ 41 42 44 80 102 103 104 105 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 ] children [
+                        DEF Joe_l_elbow HAnimJoint { name "l_elbow" center 0.2 1.1388 -0.04 skinCoordIndex [ 45 46 47 109 110 111 112 113 115 116 117 118 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ] children [
+                         DEF Joe_l_radiocarpal HAnimJoint { name "l_radiocarpal" center 0.2 0.87 -0.04 skinCoordIndex [ 119 120 121 122 123 124 125 126 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 ] children [
+                          DEF Joe_l_carpometacarpal_1 HAnimJoint { name "l_carpometacarpal_1" center 0.1924 0.8472 -0.0534 skinCoordIndex [ 127 128 ] skinCoordWeight [ 1 1 ] children [
+                           DEF Joe_l_metacarpophalangeal_1 HAnimJoint { name "l_metacarpophalangeal_1" center 0.1951 0.8226 0.0246 skinCoordIndex [ 138 139 140 141 142 143 ] skinCoordWeight [ 0.5 0.5 0.5 1 1 1 ] children [
+                            DEF Joe_l_carpal_interphalangeal_1 HAnimJoint { name "l_carpal_interphalangeal_1" center 0.1955 0.8159 0.0464 skinCoordIndex [ 144 145 146 147 148 149 150 151 152 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]}
+                          DEF Joe_l_carpometacarpal_2 HAnimJoint { name "l_carpometacarpal_2" center 0.1983 0.8024 -0.0280 skinCoordIndex [ 129 130 ] skinCoordWeight [ 1 1 ] children [
+                           DEF Joe_l_metacarpophalangeal_2 HAnimJoint { name "l_metacarpophalangeal_2" center 0.1983 0.7815 -0.0280 skinCoordIndex [ 138 139 140 153 154 155 163 ] skinCoordWeight [ 0.5 0.5 0.5 1 1 1 0.5 ] children [
+                            DEF Joe_l_carpal_proximal_interphalangeal_2 HAnimJoint { name "l_carpal_proximal_interphalangeal_2" center 0.2017 0.7363 -0.0248 skinCoordIndex [ 166 167 168 169  ] skinCoordWeight [ 1 1 1 1 ] children [
+                             DEF Joe_l_carpal_distal_interphalangeal_2 HAnimJoint { name "l_carpal_distal_interphalangeal_2" center 0.2028 0.7139 -0.0236 skinCoordIndex [ 170 171 172 173 174 175 176 177 178 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]} ]}
+                          DEF Joe_l_carpometacarpal_3 HAnimJoint { name "l_carpometacarpal_3" center 0.1987 0.8029 -0.0530 skinCoordIndex [ 131  132 ] skinCoordWeight [ 1 1 ] children [
+                           DEF Joe_l_metacarpophalangeal_3 HAnimJoint { name "l_metacarpophalangeal_3" center 0.1987 0.7818 -0.053 skinCoordIndex [ 156 157 163 164 ] skinCoordWeight [ 1 1 0.5 0.5 ] children [
+                            DEF Joe_l_carpal_proximal_interphalangeal_3 HAnimJoint { name "l_carpal_proximal_interphalangeal_3" center 0.2013 0.7273 -0.0503 skinCoordIndex [ 179 180 181 182 ] skinCoordWeight [ 1 1 1 1 ] children [
+                             DEF Joe_l_carpal_distal_interphalangeal_3 HAnimJoint { name "l_carpal_distal_interphalangeal_3" center 0.2026 0.7011 -0.0494 skinCoordIndex [ 183 184 185 186 187 188 189 190 191 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]} ]}
+                          DEF Joe_l_carpometacarpal_4 HAnimJoint { name "l_carpometacarpal_4"center 0.1956 0.8019 -0.0794 skinCoordIndex [ 133 134 ] skinCoordWeight [ 1 1 ] children [
+                           DEF Joe_l_metacarpophalangeal_4 HAnimJoint { name "l_metacarpophalangeal_4" center 0.1956 0.7815 -0.0794 skinCoordIndex [ 158 159 164 165 ] skinCoordWeight [ 1 1 0.5 0.5 ] children [
+                            DEF Joe_l_carpal_proximal_interphalangeal_4 HAnimJoint { name "l_carpal_proximal_interphalangeal_4" center 0.1973 0.7287 -0.0777 skinCoordIndex [ 192 193 194 195  ] skinCoordWeight [ 1 1 1 1 ] children [
+                             DEF Joe_l_carpal_distal_interphalangeal_4 HAnimJoint { name "l_carpal_distal_interphalangeal_4" center 0.1983 0.7045 -0.0767 skinCoordIndex [ 196 197 198 199 200 201 202 203 204 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]}  ]} ]} ]}
+                          DEF Joe_l_carpometacarpal_5 HAnimJoint { name "l_carpometacarpal_5" center 0.1925 0.8066 -0.1036 skinCoordIndex [ 135 136 137 165 ] skinCoordWeight [ 1 1 1 0.5 ] children [
+                           DEF Joe_l_metacarpophalangeal_5 HAnimJoint { name "l_metacarpophalangeal_5" center 0.1925 0.7866 -0.1036 skinCoordIndex [ 160 161 162 ] skinCoordWeight [ 1 1 1 ] children [
+                            DEF Joe_l_carpal_proximal_interphalangeal_5 HAnimJoint { name "l_carpal_proximal_interphalangeal_5" center 0.1938 0.7452 -0.1024 skinCoordIndex [ 205 206 207 208 ] skinCoordWeight [ 1 1 1 1 ] children [
+                             DEF Joe_l_carpal_distal_interphalangeal_5 HAnimJoint { name "l_carpal_distal_interphalangeal_5" center 0.1948 0.7277 -0.1017 skinCoordIndex [ 209 210 211 212 213 214 215 216 217 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]} ]} ]} ]} ]} ]} ]}
+                     DEF Joe_r_sternoclavicular HAnimJoint { name "r_sternoclavicular" center -0.03 1.46 0.0 skinCoordIndex [ 10 ] skinCoordWeight [ 1 ] children [
+                      DEF Joe_r_acromioclavicular HAnimJoint { name "r_acromioclavicular" center -0.09 1.41 -0.11 skinCoordIndex [ 77 29 ] skinCoordWeight [ 1 0.9 ] children [
+                       DEF Joe_r_shoulder HAnimJoint { name "r_shoulder" center -0.2 1.44 -0.04 rotation 0 0 1 0 skinCoordIndex [ 29 30 32 78 218 219 220 221 86 88 ] skinCoordWeight [ 0.1 1 1 1 1 1 1 1 0.3 0.2 ] children [
+                        DEF Joe_r_elbow HAnimJoint { name "r_elbow" center -0.2 1.1388 -0.04 skinCoordIndex [ 33 34 35 225 226 227 228 229 231 232 233 234 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 1 1 1 ] children [
+                         DEF Joe_r_radiocarpal HAnimJoint { name "r_radiocarpal" center -0.2 0.89 -0.04 skinCoordIndex [ 235 236 237 238 239 240 241 242 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 ] children [
+                          DEF Joe_r_carpometacarpal_1 HAnimJoint { name "r_carpometacarpal_1" center -0.2 0.85 0.0 skinCoordIndex [ 243 244 ] skinCoordWeight [ 1 1 ] children [
+                           DEF Joe_r_metacarpophalangeal_1 HAnimJoint { name "r_metacarpophalangeal_1" center -0.2 0.82 0.03 skinCoordIndex [ 254 255 256 257 258 259 ] skinCoordWeight [ 0.5 0.5 0.5 1 1 1 ] children [
+                            DEF Joe_r_carpal_interphalangeal_1 HAnimJoint { name "r_carpal_interphalangeal_1" center -0.2 0.8 0.05 skinCoordIndex [ 260 261 262 263 264 265 266 267 268 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]}
+                          DEF Joe_r_carpometacarpal_2 HAnimJoint { name "r_carpometacarpal_2" center -0.2 0.84 -0.015 skinCoordIndex [ 245 246 ] skinCoordWeight [ 1 1 ] children [
+                           DEF Joe_r_metacarpophalangeal_2 HAnimJoint { name "r_metacarpophalangeal_2" center -0.2 0.793 -0.015 skinCoordIndex [ 254 255 256 269 270 271 279 ] skinCoordWeight [ 0.5 0.5 0.5 1 1 1 0.5 ] children [
+                            DEF Joe_r_carpal_proximal_interphalangeal_2 HAnimJoint { name "r_carpal_proximal_interphalangeal_2" center -0.2 0.745 -0.015 skinCoordIndex [ 282 283 284 285 ] skinCoordWeight [ 1 1 1 1 ] children [
+                             DEF Joe_r_carpal_distal_interphalangeal_2 HAnimJoint { name "r_carpal_distal_interphalangeal_2" center -0.2 0.72 -0.015 skinCoordIndex [ 286 287 288 289 290 291 292 293 294 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]} ]}
+                          DEF Joe_r_carpometacarpal_3 HAnimJoint { name "r_carpometacarpal_3" center -0.2 0.835 -0.04 skinCoordIndex [ 247 248 ] skinCoordWeight [ 1 1 ] children [
+                           DEF Joe_r_metacarpophalangeal_3 HAnimJoint { name "r_metacarpophalangeal_3" center -0.2 0.788 -0.04 skinCoordIndex [ 272 273 279 280 ] skinCoordWeight [ 1 1 0.5 0.5 ] children [
+                            DEF Joe_r_carpal_proximal_interphalangeal_3 HAnimJoint { name "r_carpal_proximal_interphalangeal_3" center -0.2 0.74 -0.04 skinCoordIndex [ 295 296 297 298 ] skinCoordWeight [ 1 1 1 1 ] children [
+                             DEF Joe_r_carpal_distal_interphalangeal_3 HAnimJoint { name "r_carpal_distal_interphalangeal_3" center -0.2 0.7142 -0.04 skinCoordIndex [ 299 300 301 302 303 304 305 306 307 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]} ]}
+                          DEF Joe_r_carpometacarpal_4 HAnimJoint { name "r_carpometacarpal_4" center -0.2 0.835 -0.065 skinCoordIndex [ 249 250 ] skinCoordWeight [ 1 1 ] children [
+                           DEF Joe_r_metacarpophalangeal_4 HAnimJoint { name "r_metacarpophalangeal_4" center -0.2 0.793 -0.065 skinCoordIndex [ 274 275 280 281 ] skinCoordWeight [ 1 1 0.5 0.5 ] children [
+                            DEF Joe_r_carpal_proximal_interphalangeal_4 HAnimJoint { name "r_carpal_proximal_interphalangeal_4" center -0.2 0.74 -0.065 skinCoordIndex [ 308 309 310 311 ] skinCoordWeight [ 1 1 1 1 ] children [
+                             DEF Joe_r_carpal_distal_interphalangeal_4 HAnimJoint { name "r_carpal_distal_interphalangeal_4" center -0.2 0.7177 -0.065 skinCoordIndex [ 312 313 314 315 316 317 318 319 320 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]} ]}
+                          DEF Joe_r_carpometacarpal_5 HAnimJoint { name "r_carpometacarpal_5" center -0.2 0.84 -0.085 skinCoordIndex [ 251 252 253 281 ] skinCoordWeight [ 1 1 1 0.5 ] children [
+                           DEF Joe_r_metacarpophalangeal_5 HAnimJoint { name "r_metacarpophalangeal_5" center -0.2 0.79 -0.085 skinCoordIndex [ 276 277 278 ] skinCoordWeight [ 1 1 1 ] children [
+                            DEF Joe_r_carpal_proximal_interphalangeal_5 HAnimJoint { name "r_carpal_proximal_interphalangeal_5" center -0.2 0.755 -0.085 skinCoordIndex [ 321 322 323 324 ] skinCoordWeight [ 1 1 1 1 ] children [
+                             DEF Joe_r_carpal_distal_interphalangeal_5 HAnimJoint { name "r_carpal_distal_interphalangeal_5" center -0.2 0.735 -0.09 skinCoordIndex [ 325 326 327 328 329 330 331 332 333 ] skinCoordWeight [ 1 1 1 1 1 1 1 1 1 ] children [ ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]} ]}
+  ]
+
+  skin [
+   Shape {   # Skin including most Feature Points and Site objects location
+    geometry  IndexedFaceSet {
+     coord DEF JoeSkinCoord Coordinate { point [
+
+0.0 1.77 0.0               #0 skull_skull_vertex # mapped to HAnimSite
+0.0 1.665 0.09             #1 sellion # mapped to HAnimSite
+-0.033 1.62 0.087          #2 r_infraorbitale # mapped to HAnimSite
+0.033 1.62 0.087           #3 l_infraorbitale # mapped to HAnimSite
+0.0 1.55 0.097             #4 supramenton # mapped to HAnimSite
+-0.077 1.64 -0.01          #5 r_tragion # mapped to HAnimSite
+-0.0527 1.58 0.015         #6 r_gonion # mapped to HAnimSite
+0.077 1.64 -0.01           #7 l_tragion # mapped to HAnimSite
+0.0527 1.58 0.015          #8 l_gonion # mapped to HAnimSite
+0.0 1.625 -0.0925          #9 nuchalee # mapped to HAnimSite
+-0.03 1.46 0.035           #10 r_clavicle # mapped to HAnimSite
+0.0 1.44 0.03              #11 suprasternale # mapped to HAnimSite
+0.03 1.46 0.035            #12 l_clavicle # mapped to HAnimSite
+-0.1135 1.318 0.095        #13 r_thelion # mapped to HAnimSite
+0.1135 1.318 0.095         #14 l_thelion # mapped to HAnimSite
+0.0 1.25 0.113             #15 substernale # mapped to HAnimSite
+-0.087 1.19 0.09           #16 r_rib10 # mapped to HAnimSite
+-0.0935 1.03 0.075         #17 r_asis # mapped to HAnimSite
+0.087 1.19 0.09            #18 l_rib10 # mapped to HAnimSite
+0.0935 1.03 0.075          #19 l_asis # mapped to HAnimSite
+-0.1425 1.065 0.0033       #20 r_iliocristale # mapped to HAnimSite
+-0.15 0.9 -0.01            #21 r_trochanterionion # mapped to HAnimSite
+0.1425 1.065 0.0033        #22 l_iliocristale # mapped to HAnimSite
+0.15 0.9 -0.01             #23 l_trochanterionion # mapped to HAnimSite
+0.0 1.53 -0.084            #24 cervicale # mapped to HAnimSite
+0.0049 1.1908 -0.1113      #25 rib10_midspine # not mapped properly
+-0.0773 1.019 -0.12        #26 r_psis # mapped to HAnimSite
+0.0773 1.019 -0.12         #27 l_psis # mapped to HAnimSite
+0.005 1.0915 -0.1091       #28 waist_preferred_posterior # mapped to HAnimSite
+# right arm
+-0.178 1.4825 -0.0625      #29 r_acromion # mapped to HAnimSite
+-0.17 1.38 0.007           #30 r_axilla_proximal # mapped to HAnimSite
+-0.1884 0.8676 -0.036      #31 r_radial_styloid # mapped to HAnimSite
+-0.16 1.38 -0.127          #32 r_axilla_distal # mapped to HAnimSite
+-0.2 1.1388 -0.08          #33 r_olecranon # mapped to HAnimSite
+-0.244 1.1388 -0.04        #34 r_humeral_lateral_epicondyle # mapped to HAnimSite
+-0.165 1.1388 -0.04        #35 r_humeral_medial_epicondyle # mapped to HAnimSite
+-0.23 1.133 -0.055         #36 r_radiale Not used in this skin # mapped to HAnimSite
+-0.1977 0.8169 -0.0177     #37 r_metacarpal_phalanx_2 # mapped to HAnimSite
+-0.1941 0.6772 -0.0423     #38 r_dactylion tip of middle finger # mapped to HAnimSite
+-0.2117 0.8562 -0.0584     #39 r_ulnar_styloid # mapped to HAnimSite
+-0.1929 0.7890 -0.1064     #40 r_metacarpal_phalanx_5 # mapped to HAnimSite
+# left arm
+0.175 1.4825 -0.06         #41 l_acromion # mapped to HAnimSite
+0.17 1.38 0.007            #42 l_axilla_proximal # mapped to HAnimSite
+0.1901 0.8645 -0.0415      #43 l_radial_styloid # mapped to HAnimSite
+0.16 1.38 -0.125           #44 l_axilla_distal # mapped to HAnimSite
+0.2 1.1388 -0.08           #45 l_olecranon # mapped to HAnimSite
+0.165 1.1388 -0.04         #46 l_humeral_medial_epicondyle # mapped to HAnimSite
+0.244 1.1388 -0.04         #47 l_humeral_lateral_epicondyle # mapped to HAnimSite
+0.23 1.133 -0.055          #48 l_radiale Not used in this skin # mapped to HAnimSite
+0.2009 0.8139 -0.0237      #49 l_metacarpal_phalanx_2 # mapped to HAnimSite
+0.2056 0.6743 -0.0482      #50 l_dactylion # mapped to HAnimSite
+0.2142 0.8529 -0.0648      #51 l_ulnar_styloid # mapped to HAnimSite
+0.1929 0.7860 -0.1122      #52 l_metacarpal_phalanx_5 # mapped to HAnimSite
+-0.1 0.4913 -0.03          #53 r_knee_crease # mapped to HAnimSite
+-0.17 0.466 0.0            #54 r_femoral_lateral_epicondyle # mapped to HAnimSite
+-0.05 0.466 0.0            #55 r_femoral_medial_epicondyle # mapped to HAnimSite
+-0.165 0.01 0.12           #56 r_tarsal_distal_interphalangeal_2_phalanx_5 # mapped to HAnimSite
+-0.15 0.07 0.0             #57 r_lateral_malleolus # mapped to HAnimSite
+-0.085 0.086 0.0125        #58 r_medial_malleolus # mapped to HAnimSite
+-0.09 0.056 0.0125         #59 r_sphyrion # mapped to HAnimSite
+-0.115 0.02 0.122          #60 r_tarsal_distal_interphalangeal_2_phalanx_1 # mapped to HAnimSite
+-0.115  0.04 -0.055        #61 r_calcaneus_posterior # mapped to HAnimSite
+-0.110 0.011 0.19          #62 r_tarsal_distal_phalanx_2 # mapped to HAnimSite
+0.0993 0.4881 -0.0309      #63 l_knee_crease # mapped to HAnimSite
+0.17 0.466 0.0             #64 l_femoral_lateral_epicondyle # mapped to HAnimSite
+0.05 0.4867 0.0            #65 l_femoral_medial_epicondyle # mapped to HAnimSite
+0.165 0.01 0.12            #66 l_metatarsal_2_phalanx_5 # mapped to HAnimSite
+0.15 0.07 0.0              #67 l_lateral_malleolus # mapped to HAnimSite
+0.085 0.086 0.0125         #68 l_medial_malleolus # mapped to HAnimSite
+0.09 0.056 0.0125          #69 l_sphyrion # mapped to HAnimSite
+0.115 0.02 0.122           #70 l_metatarsal_2_phalanx_1 # mapped to HAnimSite
+0.115  0.04 -0.055         #71 l_calcaneus_posterior # mapped to HAnimSite
+0.110 0.011 0.19           #72 l_tarsal_distal_phalanx_2 # mapped to HAnimSite
+0.0 0.875 0.0              #73 crotch # mapped to HAnimSite
+-0.0646 1.5149 -0.038      #74 r_neck_base # mapped to HAnimSite
+0.0646 1.5149 -0.038       #75 l_neck_base # mapped to HAnimSite
+0.0 1.07225 0.09           #76 navel # mapped to HAnimSite
+-0.11 1.427 -0.1375        #77 add r_acromioclavicular back # mapped to HAnimSite
+-0.235 1.42 -0.0625        #78 add r_shoulder skin outboard # mapped to HAnimSite
+0.11 1.427 -0.1375         #79 add l_acromioclavicular back # mapped to HAnimSite
+0.235 1.42 -0.0625         #80 add l_shoulder skin outboard # mapped to HAnimSite
+0.0 1.41 -0.145            #81 add center top back # not mapped properly
+0.0 0.925 0.08             #82 add center front lower # not mapped properly
+-0.087 1.19 -0.09          #83 add back opposite rib10 # not mapped properly
+0.087 1.19 -0.09           #84 add back opposite rib10 # not mapped properly
+0.172 1.32 -0.03           #85 add mid left top # not mapped properly
+-0.172 1.32 -0.03          #86 add mid right top # not mapped properly
+0.15 1.23 -0.015           #87 add mid left mid # not mapped properly
+-0.15 1.23 -0.015          #88 add mid right mid # not mapped properly
+0.079 0.92 -0.14           #89 add back of l_hip # mapped to HAnimSite
+0.1 0.90 0.077             #90 add front of l_hip # mapped to HAnimSite
+-0.079 0.92 -0.14          #91 add back of r_hip # mapped to HAnimSite
+-0.1 0.90 0.075            #92 add front of r_hip # mapped to HAnimSite
+0.0 0.87 0.0               #93 add between legs # not mapped properly
+0.171 0.65 0.0             #94 add below l_hip outside # mapped to HAnimSite
+0.02 0.65 0.0              #95 add below l_hip inside # mapped to HAnimSite
+0.1 0.65 -0.08             #96 add below l_hip back # mapped to HAnimSite
+0.1 0.65 0.07              #97 add below l_hip front # mapped to HAnimSite
+-0.171 0.65 0.0            #98 add below r_hip outside # mapped to HAnimSite
+-0.02 0.65 0.0             #99 add below r_hip inside # mapped to HAnimSite
+-0.1 0.65 -0.08            #100 add below r_hip back # mapped to HAnimSite
+-0.1 0.65 0.07             #101 add below r_hip front # mapped to HAnimSite
+# left arm
+0.25 1.27 -0.04            #102 add at left mid arm # not mapped properly
+0.17 1.27 -0.04            #103 add at left mid arm # not mapped properly
+0.2 1.27 -0.09             #104 add at mid left arm # not mapped properly
+0.2 1.27 0.02              #105 add at left mid arm # not mapped properly
+0.244 1.1388 -0.04         #106 add at left elbow outer use l_humeral_lateral_epicondyle # mapped to HAnimSite
+0.165 1.1388 -0.04         #107 add at left elbow inner use l_humeral_medial_epicondyle # mapped to HAnimSite
+0.2 1.1388 -0.08           #108 add at left elbow back use l_olecranon # mapped to HAnimSite
+0.2 1.1388 -0.013          #109 add at left elbow front # not mapped properly
+0.225 1.0 -0.01            #110 add below left elbow outside front # not mapped properly
+0.225 1.0 -0.07            #111 add below left elbow outside back # not mapped properly
+0.185 1.0 -0.01            #112 add below left elbow inside front # not mapped properly
+0.185 1.0 -0.07            #113 add below left elbow inside back # not mapped properly
+# left wrist and hand (only -x to +x changed from right)
+0.2 1.1388 -0.04           #114 0 at elbow center not used # not mapped properly
+0.225 0.92 -0.04           #115 1 add above wrist outside front # not mapped properly
+0.175 0.92 -0.04           #116 2 add above wrist inside front # not mapped properly
+0.2 0.92 -0.065        #117 3 add above wrist inside back # not mapped properly
+0.2 0.92 -0.015        #118 4 add above wrist front # not mapped properly
+0.225 0.89 -0.04       #119 5 left wrist outside front # not mapped properly
+0.175 0.89 -0.04       #120 6 left wrist outside front # not mapped properly
+0.2   0.89 -0.065      #121 7 left wrist outside front # not mapped properly
+0.2   0.89 -0.015      #122 8 left wrist outside front # not mapped properly
+0.218 0.86 -0.04       #123 9 below left wrist # not mapped properly
+0.184 0.86 -0.04       #124 10  below left wrist # not mapped properly
+0.2 0.87 -0.07         #125 1   below left wrist # not mapped properly
+0.2 0.87 0.0           #126 2 # left hand metacarples # r_carpometacarpal_1 # mapped to HAnimSite
+0.21 0.85 0.0          #127 3 # not mapped properly
+0.1854 0.85 0.0        #128 4 # l_carpometacarpal_2 # mapped to HAnimSite
+0.212 0.84 -0.015      #129 5 # not mapped properly
+0.183 0.84 -0.015      #130 6 # l_carpometacarpal_3 # mapped to HAnimSite
+0.213 0.835 -0.04      #131 7 # not mapped properly
+0.190 0.835 -0.04      #132 8 # l_carpometacarpal_4 # mapped to HAnimSite
+0.211 0.835 -0.065     #133 9 # not mapped properly
+0.192 0.835 -0.065     #134 20 # l_carpometacarpal_5 # mapped to HAnimSite
+0.208 0.84 -0.085      #135 1 # not mapped properly
+0.190 0.84 -0.085      #136 2 # not mapped properly
+0.2 0.84 -0.095        #137 3 # l_thumb web # not mapped properly
+0.215 0.82 0.0         #138 4 # not mapped properly
+0.193 0.815 0.005      #139 5 # not mapped properly
+0.198 0.80 0.012       #140 6 # l_thumb 2 # not mapped properly
+0.21 0.82 0.03         #141 7 # not mapped properly
+0.19 0.82 0.03         #142 8 # not mapped properly
+0.2 0.835 0.039        #143 9 # l_thumb 3 # not mapped properly
+0.212 0.8 0.05         #144 30 # not mapped properly
+0.188 0.8 0.05         #145 1 # not mapped properly
+0.2 0.807 0.057        #146 2 # not mapped properly
+0.2 0.793 0.035        #147 3 # l_thumb end # not mapped properly
+0.2 0.774 0.076        #148 4 tip # not mapped properly
+0.212 0.78 0.07        #149 5 # not mapped properly
+0.188 0.78 0.07        #150 6 # not mapped properly
+0.2 0.785 0.075        #151 7 # not mapped properly
+0.2 0.77 0.062         #152 8 # l_metacarpophalangeal_2 # mapped to HAnimSite
+0.215 0.793 -0.015     #153 9 # not mapped properly
+0.187 0.793 -0.015     #154 40 # not mapped properly
+0.2 0.793 -0.005       #155 1 # l_metacarpophalangeal_3 # mapped to HAnimSite
+0.215 0.788 -0.04      #156 2 # not mapped properly
+0.187 0.788 -0.04      #157 3 # l_metacarpophalangeal_4 # mapped to HAnimSite
+0.215 0.793 -0.065     #158 4 # not mapped properly
+0.187 0.793 -0.065     #159 5 # l_metacarpophalangeal_5 # mapped to HAnimSite
+0.21 0.79 -0.085       #160 6 # not mapped properly
+0.19 0.79 -0.085       #161 7 # not mapped properly
+0.2 0.79 -0.095        #162 8 # l_between fingers # not mapped properly
+0.19 0.77 -0.0275      #163 9 # not mapped properly
+0.19 0.77 -0.0525      #164 50 # not mapped properly
+0.19 0.78 -0.0775      #165 1 # l_carpal_proximal_interphalangeal_2 # mapped to HAnimSite
+0.212 0.745 -0.015     #166 2 # not mapped properly
+0.188 0.745 -0.02      #167 3 # not mapped properly
+0.2 0.745 -0.0255      #168 4 # not mapped properly
+0.2 0.745 -0.0045      #169 5 # l_carpal_distal_interphalangeal_2 # mapped to HAnimSite
+0.211 0.72 -0.015      #170 6 # not mapped properly
+0.189 0.72 -0.015      #171 7 # not mapped properly
+0.2 0.72 -0.0252       #172 8 # not mapped properly
+0.2 0.72 -0.0048       #173 9 # l_indexend # not mapped properly
+0.21 0.695 -0.015      #174 60 # not mapped properly
+0.19 0.695 -0.015      #175 1 # not mapped properly
+0.2 0.695 -0.025       #176 2 # not mapped properly
+0.2 0.695 -0.005       #177 3 # not mapped properly
+0.2 0.685 -0.015       #178 4 # l_carpal_proximal_interphalangeal_3 # mapped to HAnimSite
+0.215 0.74 -0.04       #179 5 # not mapped properly
+0.185 0.74 -0.04       #180 6 # not mapped properly
+0.2 0.74 -0.055        #181 7 # not mapped properly
+0.2 0.74 -0.025        #182 8 # l_carpal_distal_interphalangeal_3 # mapped to HAnimSite
+0.21 0.7142 -0.04      #183 9 # not mapped properly
+0.19 0.7142 -0.04      #184 70 # not mapped properly
+0.2 0.7142 -0.053      #185 1 # not mapped properly
+0.2 0.7142 -0.027      #186 2 # l_middleend # not mapped properly
+0.21 0.68 -0.04        #187 3 # not mapped properly
+0.19 0.68 -0.04        #188 4 # not mapped properly
+0.2 0.68 -0.05         #189 5 # not mapped properly
+0.2 0.68 -0.03         #190 6 # not mapped properly
+0.2 0.67 -0.04         #191 7 # l_carpal_proximal_interphalangeal_4 # mapped to HAnimSite
+0.212 0.74 -0.065      #192 8 # not mapped properly
+0.188 0.74 -0.065      #193 9 # not mapped properly
+0.2 0.74 -0.0756       #194 80 # not mapped properly
+0.2 0.74 -0.0542       #195 1 # l_carpal_distal_interphalangeal_4 # mapped to HAnimSite
+0.21 0.7177 -0.065     #196 2 # not mapped properly
+0.19 0.7177 -0.065     #197 3 # not mapped properly
+0.2 0.7177 -0.0751     #198 4 # not mapped properly
+0.2 0.7177 -0.0549     #199 5 # l_ringend # not mapped properly
+0.21 0.695 -0.065      #200 6 # not mapped properly
+0.19 0.695 -0.065      #201 7 # not mapped properly
+0.2 0.695 -0.075       #202 8 # not mapped properly
+0.2 0.695 -0.055       #203 9 # not mapped properly
+0.2 0.685 -0.065       #204 90 # l_carpal_proximal_interphalangeal_5 # mapped to HAnimSite
+0.211 0.755 -0.085     #205 1 # not mapped properly
+0.189 0.755 -0.085     #206 2 # not mapped properly
+0.2 0.755 -0.0952      #207 3 # not mapped properly
+0.2 0.755 -0.0748      #208 4 # l_carpal_distal_interphalangeal_5 # mapped to HAnimSite
+0.21 0.735 -0.085      #209 5 # not mapped properly
+0.19 0.735 -0.085      #210 6 # not mapped properly
+0.2 0.735 -0.0951      #211 7 # not mapped properly
+0.2 0.735 -0.0749      #212 8 # l_pinkyend # not mapped properly
+0.21 0.72 -0.085       #213 9 # not mapped properly
+0.19 0.72 -0.085       #214 100 # not mapped properly
+0.2 0.72 -0.095        #215 1 # not mapped properly
+0.2 0.72 -0.075        #216 2 # not mapped properly
+0.2 0.71 -0.085        #217 3 # not mapped properly
+# right arm
+-0.23 1.23  -0.04      #218 114 add at right mid arm outside # not mapped properly
+-0.16 1.23  -0.04      #219 115 add at right mid arm inside # not mapped properly
+-0.2 1.235 -0.105      #220 116 add at right mid arm back # not mapped properly
+-0.2 1.255 0.02        #221 117 add at right mid arm front # not mapped properly
+-0.244 1.1388 -0.04    #222 118 add at right elbow outer use r_humeral_lateral_epicondyle # mapped to HAnimSite
+-0.165 1.1388 -0.04    #223 119 add at right elbow inner use r_humeral_medial_epicondyle # mapped to HAnimSite
+-0.2 1.1388 -0.08      #224 120 add at right elbow back use r_olecranon # mapped to HAnimSite
+-0.2 1.1388 0.013      #225 121 add at right elbow front # not mapped properly
+-0.225 1.0 -0.01       #226 122 add below right elbow outside front # not mapped properly
+-0.225 1.0 -0.07       #227 123 add below right elbow outside back # not mapped properly
+-0.185 1.0 -0.01       #228 124 add below right elbow inside front # not mapped properly
+-0.185 1.0 -0.07       #229 125 add below right elbow inside back # not mapped properly
+# right wrist and hand
+-0.2 1.1388 -0.04      #230 0 at elbow center not used # not mapped properly
+-0.225 0.92 -0.04      #231 1 # above right wrist # not mapped properly
+-0.175 0.92 -0.04      #232 2 # not mapped properly
+-0.2 0.92 -0.065       #233 3 # not mapped properly
+-0.2 0.92 -0.015       #234 4 # right wrist # not mapped properly
+-0.225 0.89 -0.04       #235 5 # not mapped properly
+-0.175 0.89 -0.04       #236 6 # not mapped properly
+-0.2   0.89 -0.065      #237 7 # not mapped properly
+-0.2   0.89 -0.015      #238 8 # below right wrist # not mapped properly
+-0.218 0.86 -0.04       #239 9 # not mapped properly
+-0.184 0.86 -0.04       #240 10 # not mapped properly
+-0.2 0.87 -0.07         #241 1 # not mapped properly
+-0.2 0.87 0.0           #242 2 # right hand metacarples # r_carpometacarpal_1 # mapped to HAnimSite
+-0.21 0.85 0.0          #243 3 # not mapped properly
+-0.1854 0.85 0.0        #244 4 # r_carpometacarpal_2 # mapped to HAnimSite
+-0.212 0.84 -0.015      #245 5 # not mapped properly
+-0.183 0.84 -0.015      #246 6 # r_carpometacarpal_3 # mapped to HAnimSite
+-0.213 0.835 -0.04      #247 7 # not mapped properly
+-0.190 0.835 -0.04      #248 8 # r_carpometacarpal_4 # mapped to HAnimSite
+-0.211 0.835 -0.065     #249 9 # not mapped properly
+-0.192 0.835 -0.065     #250 20 # r_carpometacarpal_5 # mapped to HAnimSite
+-0.208 0.84 -0.085      #251 1 # not mapped properly
+-0.190 0.84 -0.085      #252 2 # not mapped properly
+-0.2 0.84 -0.095        #253 3 # r_thumb web # not mapped properly
+-0.215 0.82 0.0         #254 4 # not mapped properly
+-0.193 0.815 0.005      #255 5 # not mapped properly
+-0.198 0.80 0.012       #256 6 # r_thumb 2 # not mapped properly
+-0.21 0.82 0.03         #257 7 # not mapped properly
+-0.19 0.82 0.03         #258 8 # not mapped properly
+-0.2 0.835 0.039        #259 9 # r_thumb 3 # not mapped properly
+-0.212 0.8 0.05         #260 30 # not mapped properly
+-0.188 0.8 0.05         #261 1 # not mapped properly
+-0.2 0.807 0.057        #262 2 # not mapped properly
+-0.2 0.793 0.035        #263 3 # r_thumb end # not mapped properly
+-0.2 0.774 0.076        #264 4 tip # not mapped properly
+-0.212 0.78 0.07        #265 5 # not mapped properly
+-0.188 0.78 0.07        #266 6 # not mapped properly
+-0.2 0.785 0.075        #267 7 # not mapped properly
+-0.2 0.77 0.062         #268 8 # r_metacarpophalangeal_2 # mapped to HAnimSite
+-0.215 0.793 -0.015     #269 9 # not mapped properly
+-0.187 0.793 -0.015     #270 40 # not mapped properly
+-0.2 0.793 -0.005       #271 1 # r_metacarpophalangeal_3 # mapped to HAnimSite
+-0.215 0.788 -0.04      #272 2 # not mapped properly
+-0.187 0.788 -0.04      #273 3 # r_metacarpophalangeal_4 # mapped to HAnimSite
+-0.215 0.793 -0.065     #274 4 # not mapped properly
+-0.187 0.793 -0.065     #275 5 # r_metacarpophalangeal_5 # mapped to HAnimSite
+-0.21 0.79 -0.085       #276 6 # not mapped properly
+-0.19 0.79 -0.085       #277 7 # not mapped properly
+-0.2 0.79 -0.095        #278 8 # r_between fingers # not mapped properly
+-0.19 0.77 -0.0275      #279 9 # not mapped properly
+-0.19 0.77 -0.0525      #280 50 # not mapped properly
+-0.19 0.78 -0.0775      #281 1 # r_carpal_proximal_interphalangeal_2 # mapped to HAnimSite
+-0.212 0.745 -0.015     #282 2 # not mapped properly
+-0.188 0.745 -0.02      #283 3 # not mapped properly
+-0.2 0.745 -0.0255      #284 4 # not mapped properly
+-0.2 0.745 -0.0045      #285 5 # r_carpal_distal_interphalangeal_2 # mapped to HAnimSite
+-0.211 0.72 -0.015      #286 6 # not mapped properly
+-0.189 0.72 -0.015      #287 7 # not mapped properly
+-0.2 0.72 -0.0252       #288 8 # not mapped properly
+-0.2 0.72 -0.0048       #289 9 # r_indexend # not mapped properly
+-0.21 0.695 -0.015      #290 60 # not mapped properly
+-0.19 0.695 -0.015      #291 1 # not mapped properly
+-0.2 0.695 -0.025       #292 2 # not mapped properly
+-0.2 0.695 -0.005       #293 3 # not mapped properly
+-0.2 0.685 -0.015       #294 4 # r_carpal_proximal_interphalangeal_3 # mapped to HAnimSite
+-0.215 0.74 -0.04       #295 5 # not mapped properly
+-0.185 0.74 -0.04       #296 6 # not mapped properly
+-0.2 0.74 -0.055        #297 7 # not mapped properly
+-0.2 0.74 -0.025        #298 8 # r_carpal_distal_interphalangeal_3 # mapped to HAnimSite
+-0.21 0.7142 -0.04      #299 9 # not mapped properly
+-0.19 0.7142 -0.04      #300 70 # not mapped properly
+-0.2 0.7142 -0.053      #301 1 # not mapped properly
+-0.2 0.7142 -0.027      #302 2 # r_middleend # not mapped properly
+-0.21 0.68 -0.04        #303 3 # not mapped properly
+-0.19 0.68 -0.04        #304 4 # not mapped properly
+-0.2 0.68 -0.05         #305 5 # not mapped properly
+-0.2 0.68 -0.03         #306 6 # not mapped properly
+-0.2 0.67 -0.04         #307 7 # r_carpal_proximal_interphalangeal_4 # mapped to HAnimSite
+-0.212 0.74 -0.065      #308 8 # not mapped properly
+-0.188 0.74 -0.065      #309 9 # not mapped properly
+-0.2 0.74 -0.0756       #310 80 # not mapped properly
+-0.2 0.74 -0.0542       #311 1 # r_carpal_distal_interphalangeal_4 # mapped to HAnimSite
+-0.21 0.7177 -0.065     #312 2 # not mapped properly
+-0.19 0.7177 -0.065     #313 3 # not mapped properly
+-0.2 0.7177 -0.0751     #314 4 # not mapped properly
+-0.2 0.7177 -0.0549     #315 5 # r_ringend # not mapped properly
+-0.21 0.695 -0.065      #316 6 # not mapped properly
+-0.19 0.695 -0.065      #317 7 # not mapped properly
+-0.2 0.695 -0.075       #318 8 # not mapped properly
+-0.2 0.695 -0.055       #319 9 # not mapped properly
+-0.2 0.685 -0.065       #320 90 # r_carpal_proximal_interphalangeal_5 # mapped to HAnimSite
+-0.211 0.755 -0.085     #321 1 # not mapped properly
+-0.189 0.755 -0.085     #322 2 # not mapped properly
+-0.2 0.755 -0.0952      #323 3 # not mapped properly
+-0.2 0.755 -0.0748      #324 4 # r_carpal_distal_interphalangeal_5 # mapped to HAnimSite
+-0.21 0.735 -0.085      #325 5 # not mapped properly
+-0.19 0.735 -0.085      #326 6 # not mapped properly
+-0.2 0.735 -0.0951      #327 7 # not mapped properly
+-0.2 0.735 -0.0749      #328 8 # r_pinkyend # not mapped properly
+-0.21 0.72 -0.085       #329 9 # not mapped properly
+-0.19 0.72 -0.085       #330 100 # not mapped properly
+-0.2 0.72 -0.095        #331 1 # not mapped properly
+-0.2 0.72 -0.075        #332 2 # not mapped properly
+-0.2 0.71 -0.085        #333 3 # not mapped properly
+# left leg and foot
+0.115 0.466 0.06        #334 add at l_knee front # mapped to HAnimSite
+0.115 0.466 -0.055      #335 add l_knee_crease # mapped to HAnimSite
+0.15 0.466 0.0          #336 add l_knee outside l_femoral_lateral_epicondyle # mapped to HAnimSite
+0.05 0.466 0.0          #337 add l_knee inside l_femoral_medial_epicondyle # mapped to HAnimSite
+0.17 0.3 0.0            #338 add below l_knee outside # mapped to HAnimSite
+0.06 0.3 0.0            #339 add below l_knee inside # mapped to HAnimSite
+0.1 0.3 -0.05           #340 add below l_knee back # mapped to HAnimSite
+0.1 0.3 0.05            #341 add below l_knee front # mapped to HAnimSite
+0.15 0.07 0.0           #342 add at l_talocrural outside # mapped to HAnimSite
+0.085 0.086 0.0125      #343 add at l_talocrural inside # mapped to HAnimSite
+0.115 0.069 -0.045      #344 add at l_talocrural back # mapped to HAnimSite
+0.117 0.0975 0.0615     #345 add at l_talocrural front # mapped to HAnimSite
+0.1375 0.006 -0.03      #346 add at l_tarsometatarsal_2 outside # mapped to HAnimSite
+0.095 0.006 -0.03       #347 add at l_tarsometatarsal_2 inside # mapped to HAnimSite
+0.115  0.015 -0.045     #348 add at l_tarsometatarsal_2 rear # mapped to HAnimSite
+0.115 0.06 0.1          #349 add at l_metatarsophalangeal_2 up # mapped to HAnimSite
+0.115 0.0 0.07          #350 add at l_metatarsophalangeal_2 down # mapped to HAnimSite
+0.165 0.0 0.07          #351 add at l_metatarsophalangeal_2 outside # mapped to HAnimSite
+0.095 0.0 0.07          #352 add at l_metatarsophalangeal_2 inside # mapped to HAnimSite
+0.115 0.04 0.13         #353 add at l_metatarsal_2 top # mapped to HAnimSite
+0.125 0.0 0.12          #354 add at l_metatarsal_2 bottom # mapped to HAnimSite
+0.165 0.0 0.12          #355 add at l_metatarsal_2 outside # mapped to HAnimSite
+0.087 0.0 0.122         #356 add at l_metatarsal_2 inside # mapped to HAnimSite
+0.090 0.012 0.188       #357 add at l_piggywentomarket_tip # not mapped properly
+0.110 0.011 0.19        #358 add at l_piggystayedhome_tip # not mapped properly
+0.128 0.011 0.185       #359 add at l_piggyateroastbeef_tip # not mapped properly
+0.142 0.011 0.178       #360 add at l_piggyhadnone_tip # not mapped properly
+0.154 0.010 0.168       #361 add at l_piggyranallthewayhomeweeweeweeweewee_tip # not mapped properly
+# right leg and foot
+-0.115 0.466 0.06       #362 add at r_knee front # mapped to HAnimSite
+-0.115 0.466 -0.055     #363 add r_knee_crease # mapped to HAnimSite
+-0.17 0.466 0.0         #364 add r_femoral_lateral_epicondyle # mapped to HAnimSite
+-0.05 0.466 0.0         #365 add r_femoral_medial_epicondyle # mapped to HAnimSite
+-0.17 0.3 0.0           #366 add below r_knee # mapped to HAnimSite
+-0.06 0.3 0.0           #367 add below r_knee # mapped to HAnimSite
+-0.1 0.3 -0.05          #368 add below r_knee # mapped to HAnimSite
+-0.1 0.3 0.05           #369 add below r_knee # mapped to HAnimSite
+-0.15 0.07 0.0          #370 add at r_talocrural # mapped to HAnimSite
+-0.085 0.086 0.0125     #371 add at r_talocrural # mapped to HAnimSite
+-0.115 0.069 -0.045     #372 add at r_talocrural # mapped to HAnimSite
+-0.117 0.0975 0.0615    #373 add at r_talocrural # mapped to HAnimSite
+-0.1375 0.006 -0.03     #374 add at r_tarsometatarsal_2 outside # mapped to HAnimSite
+-0.095 0.006 -0.03      #375 add at r_tarsometatarsal_2 inside # mapped to HAnimSite
+-0.095 0.006 -0.03      #376 add at r_tarsometatarsal_2 rear # mapped to HAnimSite
+-0.115 0.06 0.1         #377 add at r_metatarsophalangeal_2 up # mapped to HAnimSite
+-0.115 0.0 0.07         #378 add at r_metatarsophalangeal_2 down # mapped to HAnimSite
+-0.165 0.0 0.07         #379 add at r_metatarsophalangeal_2 outside # mapped to HAnimSite
+-0.095 0.0 0.07         #380 add at r_metatarsophalangeal_2 inside # mapped to HAnimSite
+-0.115 0.04 0.13        #381 add at r_tarsal_distal_interphalangeal_2 top # mapped to HAnimSite
+-0.125 0.0 0.12         #382 add at r_tarsal_distal_interphalangeal_2 bottom # mapped to HAnimSite
+-0.165 0.0 0.12         #383 add at r_tarsal_distal_interphalangeal_2 outside # mapped to HAnimSite
+-0.087 0.0 0.122        #384 add at r_tarsal_distal_interphalangeal_2 inside # mapped to HAnimSite
+-0.090 0.012 0.188      #385 add at r_piggywenttomarket_tip # not mapped properly
+-0.110 0.011 0.19       #386 add at r_piggystayedhome_tip # not mapped properly
+-0.128 0.011 0.185      #387 add at r_piggyateroastbeef_tip # not mapped properly
+-0.142 0.011 0.178      #388 add at r_piggyhadnone_tip # not mapped properly
+-0.154 0.010 0.168      #389 add at r_piggyranallthewayhomeweeweeweeweeweeweeweeweeweewee_tip # not mapped properly
+
+# Some Spec Site object Default translations
+
+#0.1354 0.0016 0.1476   # l_tarsal_distal_phalanx_2_tip
+#-0.1043 -0.0227 0.1450 # r_tarsal_distal_phalanx_2_tip
+#0.1982 0.8061 0.0759   #l_carpal_distal_phalanx_1_tip
+#0.2089 0.6858 -0.0245  #l_carpal_distal_phalanx_2_tip
+#0.2080 0.6731 -0.0491  #l_carpal_distal_phalanx_3_tip
+#0.2035 0.6750 -0.0756  #l_carpal_distal_phalanx_4_tip
+#0.2014 0.7009 -0.1012  #l_carpal_distal_phalanx_5_tip
+#-0.1869 0.8090 0.0820  #r_carpal_distal_phalanx_1_tip
+#-0.1980 0.6883 -0.0180 #r_carpal_distal_phalanx_2_tip
+#-0.1969 0.6758 -0.0427 #r_carpal_distal_phalanx_3_tip
+#-0.1934 0.6778 -0.0693 #r_carpal_distal_phalanx_4_tip
+#-0.1938 0.7035 -0.0949 #r_carpal_distal_phalanx_5_tip
+
+ ]}
+      coordIndex [
+# skull
+0 9 5 -1 0 7 9 -1 0 5 1 -1 1 5 2 -1 1 3 7 -1 2 4 3 -1 0 1 7 -1 1 2 3 -1 5 6 2 -1 7 3 8 -1 6 4 2 -1 3 4 8 -1 9 6 5 -1 9 7 8 -1 4 6 10 -1 4 10 12 -1 4 12 8 -1  10 11 12 -1 9 75 24 -1 9 24 74 -1 9 8 75 -1 9 74 6 -1 10 6 74 -1 12 75 8 -1
+# r_shoulder
+74 24 29 -1 24 77 29 -1 10 74 29 -1 77 32 29 -1 32 78 29 -1 78 30 29 -1 30 10 29 -1
+# l_shoulder
+41 24 75 -1 41 75 12 -1 41 12 42 -1 41 42 80 -1 41 80 44 -1 41 44 79 -1 41 79 24 -1
+# top back
+81 24 79 -1 81 77 24 -1 81 25 77 -1 81 79 25 -1 25 79 44 -1 25 32 77 -1 25 83 32 -1 25 26 83 -1 25 27 26 -1 25 84 27 -1 25 44 84 -1
+# front
+11 10 30 -1 11 30 13 -1 11 13 15 -1 11 15 14 -1 11 14 42 -1 11 42 12 -1
+# more front
+15 13 16 -1 15 18 14 -1 15 16 76 -1 15 76 18 -1 76 16 17 -1 76 17 82 -1 76 82 19 -1 76 19 18 -1 22 18 19 -1 22 87 18 -1 22 27 84 -1 22 84 87 -1 87 84 85 -1 85 84 44 -1 85 42 14 -1 87 14 18 -1 87 85 14 -1
+# right side
+20 83 26 -1 20 17 16 -1 20 16 88 -1 20 88 83 -1 88 16 13 -1 88 13 86 -1 88 86 83 -1 86 13 30 -1 86 32 83 -1 23 89 22 -1 89 27 22 -1 89 91 27 -1 91 26 27 -1 91 20 26 -1 21 20 91 -1 21 17 20 -1 21 92 17 -1 82 17 92 -1 82 90 19 -1 23 22 19 -1 23 19 90 -1
+# lower torso
+82 92 101 -1 82 101 99 -1 82 99 93 -1 82 93 95 -1 82 95 97 -1 82 97 90 -1 23 90 97 -1 23 97 94 -1 23 94 89 -1 89 94 96 -1 89 96 95 -1 89 95 93 -1 89 93 91 -1 91 93 99 -1 91 99 100 -1 91 100 98 -1 21 91 98 -1 21 98 101 -1 21 101 92 -1
+# left arm upper
+85 105 42 -1 85 103 105 -1 85 44 103 -1 103 44 104 -1 80 42 105 -1 80 105 102 -1 80 102 104 -1 80 104 44 -1
+# left arm middle
+105 109 102 -1 102 109 47 -1 47 104 102 -1 104 47 45 -1 104 45 103 -1 103 45 46 -1 103 46 109 -1 103 109 105 -1
+# left forearm middle
+109 112 110 -1 109 110 47 -1 47 110 111 -1 47 111 45 -1 45 111 113 -1 113 46 45 -1 46 113 112 -1 112 109 46 -1
+# left wrist and hand
+112 118 110 -1 110 118 115 -1 110 115 111 -1 111 115 117 -1 111 117 113 -1 113 117 116 -1 113 116 112 -1 112 116 118 -1 115 118 119 -1 119 118 122 -1 118 116 122 -1 122 116 120 -1 116 117 120 -1 120 117 121 -1 117 115 121 -1 115 119 121 -1 119 127 123 -1 119 122 127 -1 122 126 127 -1 122 128 126 -1 122 120 128 -1 120 124 128 -1 120 121 124 -1 121 125 124 -1 121 119 125 -1 119 123 125 -1 127 129 123 -1 127 126 129 -1 129 126 141 -1 141 126 143 -1 126 142 143 -1 126 128 142 -1 128 124 130 -1 142 128 130 -1 124 132 130 -1 124 134 132 -1 125 134 124 -1 125 136 134 -1 125 137 136 -1 125 135 137 -1 125 133 135 -1 125 123 133 -1 123 131 133 -1 123 129 131 -1 131 129 138 -1 129 141 138 -1 138 141 144 -1 141 143 144 -1 143 146 144 -1 142 146 143 -1 142 145 146 -1 139 145 142 -1 130 139 142 -1 139 130 132 -1 139 132 154 -1 132 157 154 -1 132 159 157 -1 132 134 159 -1 134 136 159 -1 136 161 159 -1 136 137 161 -1 137 162 161 -1 160 162 137 -1 135 160 137 -1 133 160 135 -1 133 158 160 -1 131 158 133 -1 156 158 131 -1 153 156 131 -1 131 138 153 -1 138 155 153 -1 140 155 138 -1 138 144 140 -1 144 147 140 -1 140 147 145 -1 140 145 139 -1 139 155 140 -1 154 155 139 -1 146 149 144 -1 146 151 149 -1 145 151 146 -1 150 151 145 -1 145 152 150 -1 147 152 145 -1 147 149 152 -1 147 144 149 -1 148 149 151 -1 148 152 149 -1 148 150 152 -1 148 151 150 -1 160 207 162 -1 160 205 207 -1 165 208 205 -1 160 165 205 -1 158 165 160 -1 161 162 207 -1 161 207 206 -1 165 206 208 -1 206 165 161 -1 161 165 159 -1 207 209 211 -1 205 209 207 -1 205 212 209 -1 205 208 212 -1 206 212 208 -1 206 210 212 -1 206 207 210 -1 207 211 210 -1 209 212 213 -1 212 216 213 -1 212 214 216 -1 210 214 212 -1 210 215 214 -1 210 211 215 -1 209 215 211 -1 209 213 215 -1 217 213 216 -1 217 215 213 -1 217 214 215 -1 217 216 214 -1 158 194 165 -1 192 194 158 -1 164 195 192 -1 158 164 192 -1 156 164 158 -1 159 194 165 -1 159 194 193 -1 159 193 195 -1 159 195 164 -1 159 164 157 -1 157 164 180 -1 192 198 194 -1 192 196 198 -1 192 195 196 -1 195 199 196 -1 196 199 200 -1 199 203 200 -1 193 199 195 -1 193 197 199 -1 193 198 197 -1 193 194 198 -1 199 201 203 -1 197 201 199 -1 197 198 201 -1 198 202 201 -1 196 202 198 -1 200 202 196 -1 204 202 200 -1 204 201 202 -1 204 203 201 -1 204 200 203 -1 156 181 164 -1 156 179 181 -1 156 182 179 -1 156 163 182 -1 163 180 182 -1 157 180 163 -1 164 181 180 -1 179 182 183 -1 182 186 183 -1 182 184 186 -1 180 184 182 -1 180 181 184 -1 181 185 184 -1 179 185 181 -1 183 185 179 -1 183 186 187 -1 186 190 187 -1 184 190 186 -1 184 188 190 -1 184 185 188 -1 185 189 188 -1 185 183 189 -1 183 187 189 -1 191 189 187 -1 191 188 189 -1 191 190 188 -1 191 187 190 -1 153 163 156 -1 153 168 163 -1 153 166 168 -1 153 169 166 -1 155 169 153 -1 155 167 169 -1 154 167 155 -1 154 163 167 -1 154 157 163 -1 163 168 167 -1 166 169 170 -1 169 173 170 -1 169 171 173 -1 169 167 171 -1 167 168 171 -1 168 172 171 -1 168 170 172 -1 170 168 166 -1 170 173 174 -1 173 177 174 -1 173 175 177 -1 173 171 175 -1 171 172 175 -1 172 176 175 -1 172 174 176 -1 170 174 172 -1 178 176 174 -1 178 175 176 -1 178 177 175 -1 178 174 177 -1
+# right arm upper
+86 30 221 -1 86 221 219 -1 86 219 32 -1 32 219 220 -1 78 32 220 -1 78 220 218 -1 78 218 221 -1 78 221 30 -1
+# right arm middle
+221 225 219 -1 219 225 35 -1 35 33 219 -1 33 220 219 -1 33 34 220 -1 220 34 218 -1 221 218 34 -1 34 225 221 -1
+# right forearm middle
+225 226 228 -1 225 228 35 -1 35 228 229 -1 35 229 33 -1 33 229 227 -1 33 227 34 -1 34 227 226 -1 34 226 225 -1
+# right wrist and hand
+226 234 228 -1 228 234 232 -1 232 229 228 -1 232 233 229 -1 229 233 227 -1 227 233 231 -1 227 231 226 -1 226 231 234 -1 231 235 234 -1 235 238 234 -1 234 238 232 -1 238 236 232 -1 232 236 233 -1 236 237 233 -1 233 237 231 -1 231 237 235 -1 235 239 243 -1 235 243 238 -1 238 243 242 -1 238 242 244 -1 238 244 236 -1 236 244 240 -1 236 240 237 -1 237 240 241 -1 237 241 235 -1 235 241 239 -1 243 239 245 -1 243 245 242 -1 245 257 242 -1 257 259 242 -1 242 259 258 -1 242 258 244 -1 244 246 240 -1 258 246 244 -1 240 246 248 -1 240 248 250 -1 241 240 250 -1 241 250 252 -1 241 252 253 -1 241 253 251 -1 241 251 249 -1 241 249 239 -1 239 249 247 -1 239 247 245 -1 247 254 245 -1 245 254 257 -1 254 260 257 -1 257 260 259 -1 259 260 262 -1 258 259 262 -1 258 262 261 -1 255 258 261 -1 246 258 255 -1 255 248 246 -1 255 270 248 -1 248 270 273 -1 248 273 275 -1 248 275 250 -1 250 275 252 -1 252 275 277 -1 252 277 253 -1 253 277 278 -1 276 253 278 -1 251 253 276 -1 249 251 276 -1 249 276 274 -1 247 249 274 -1 272 247 274 -1 269 247 272 -1 247 269 254 -1 254 269 271 -1 256 254 271 -1 254 256 260 -1 260 256 263 -1 256 261 263 -1 256 255 261 -1 255 256 271 -1 270 255 271 -1 262 260 265 -1 262 265 267 -1 261 262 267 -1 266 261 267 -1 261 266 268 -1 263 261 268 -1 263 268 265 -1 263 265 260 -1 264 267 265 -1 264 265 268 -1 264 268 266 -1 264 266 267 -1 276 278 323 -1 276 323 321 -1 281 321 324 -1 276 321 281 -1 274 276 281 -1 277 323 278 -1 277 322 323 -1 281 324 322 -1 322 277 281 -1 277 275 281 -1 323 327 325 -1 321 323 325 -1 321 325 328 -1 321 328 324 -1 322 324 328 -1 322 328 326 -1 322 326 323 -1 323 326 327 -1 325 329 328 -1 328 329 332 -1 328 332 330 -1 326 328 330 -1 326 330 331 -1 326 331 327 -1 325 327 331 -1 325 331 329 -1 333 332 329 -1 333 329 331 -1 333 331 330 -1 333 330 332 -1 274 281 310 -1 308 274 310 -1 280 308 311 -1 274 308 280 -1 272 274 280 -1 275 310 281 -1 275 309 310 -1 275 311 309 -1 275 280 311 -1 275 273 280 -1 273 296 280 -1 308 310 314 -1 308 314 312 -1 308 312 311 -1 311 312 315 -1 312 316 315 -1 315 316 319 -1 309 311 315 -1 309 315 313 -1 309 313 314 -1 309 314 310 -1 315 319 317 -1 313 315 317 -1 313 317 314 -1 314 317 318 -1 312 314 318 -1 316 312 318 -1 320 316 318 -1 320 318 317 -1 320 317 319 -1 320 319 316 -1 272 280 297 -1 272 297 295 -1 272 295 298 -1 272 298 279 -1 279 298 296 -1 273 279 296 -1 280 296 297 -1 295 299 298 -1 298 299 302 -1 298 302 300 -1 296 298 300 -1 296 300 297 -1 297 300 301 -1 295 297 301 -1 299 295 301 -1 299 303 302 -1 302 303 306 -1 300 302 306 -1 300 306 304 -1 300 304 301 -1 301 304 305 -1 301 305 299 -1 299 305 303 -1 307 303 305 -1 307 305 304 -1 307 304 306 -1 307 306 303 -1 269 272 279 -1 269 279 284 -1 269 284 282 -1 269 282 285 -1 271 269 285 -1 271 285 283 -1 270 271 283 -1 270 283 279 -1 270 279 273 -1 279 283 284 -1 282 286 285 -1 285 286 289 -1 285 289 287 -1 285 287 283 -1 283 287 284 -1 284 287 288 -1 284 288 286 -1 286 282 284 -1 286 290 289 -1 289 290 293 -1 289 293 291 -1 289 291 287 -1 287 291 288 -1 288 291 292 -1 288 292 290 -1 286 288 290 -1 294 290 292 -1 294 292 291 -1 294 291 293 -1 294 293 290 -1
+
+# left leg and foot
+97 334 336 -1 97 336 94 -1 94 336 96 -1 336 335 96 -1 96 335 95 -1 95 335 337 -1 95 337 334 -1 95 334 97 -1 334 341 336 -1 336 341 338 -1 336 338 335 -1 335 338 340 -1 335 340 337 -1 337 340 339 -1 337 339 334 -1 334 339 341 -1 341 345 342 -1 341 342 338 -1 338 342 340 -1 340 342 344 -1 340 344 339 -1 339 344 343 -1 339 343 345 -1 339 345 341 -1 345 349 342 -1 342 349 351 -1 342 351 346 -1 342 346 344 -1 71 346 348 -1 71 344 346 -1 71 348 347 -1 71 347 344 -1 344 347 343 -1 343 347 352 -1 343 352 349 -1 343 349 345 -1 349 352 356 -1 349 356 353 -1 349 353 355 -1 349 355 351 -1 354 356 352 -1 354 352 350 -1 354 350 351 -1 354 351 355 -1 353 356 357 -1 353 357 358 -1 353 358 359 -1 353 359 360 -1 353 360 361 -1 353 361 355 -1 354 357 356 -1 350 346 351 -1 348 346 347 -1 350 347 346 -1 350 352 347 -1 354 358 357 -1 354 359 358 -1 354 360 359 -1 354 361 360 -1 354 355 361 -1
+
+# right leg and foot
+101 362 365 -1 101 365 99 -1 99 365 100 -1 100 365 363 -1 100 363 98 -1 98 363 364 -1 98 364 101 -1 101 364 362 -1 362 369 367 -1 362 367 365 -1 365 367 363 -1 363 367 368 -1 363 367 368 -1 363 368 366 -1 363 366 364 -1 364 366 362 -1 362 366 369 -1 369 373 371 -1 369 371 367 -1 367 371 368 -1 368 371 372 -1 368 372 366 -1 366 372 370 -1 366 370 369 -1 369 370 373 -1 373 377 380 -1 373 380 375 -1 373 375 371 -1 371 375 372 -1 372 375 376 -1 372 376 374 -1 372 374 370 -1 370 374 379 -1 373 370 379 -1 373 379 377 -1 377 379 383 -1 377 383 381 -1 377 381 384 -1 377 384 380 -1 381 383 389 -1 381 389 388 -1 381 388 387 -1 381 387 386 -1 381 386 385 -1 381 385 384 -1 376 375 374 -1 378 379 374 -1 378 374 375 -1 378 375 380 -1 382 386 387 -1 382 387 388 -1 382 388 389 -1 382 389 383 -1 382 383 379 -1 382 379 378 -1 382 378 380 -1 382 380 384 -1 382 384 385 -1 382 385 386 -1
+  ]
+
+  creaseAngle  3.1 colorPerVertex FALSE }
+   appearance Appearance {
+    texture ImageTexture { url [ "bodytexture28.png" ] }
+     material Material {
+       # ambientIntensity 0.9 shininess 0.9 diffuseColor 0.5 0 0.5 specularColor 1 1 1  transparency 0
+       emissiveColor 0.13 0.55 0.13
+     }
+    }
+   }
+  ]
+
+  skinCoord USE JoeSkinCoord
+sites [
+DEF Joe_0_skull_vertex HAnimSite { name "0_skull_vertex" translation 0.0 1.77 0.0 } #0 skull_skull_vertex
+DEF Joe_1_sellion HAnimSite { name "1_sellion" translation 0.0 1.665 0.09 } #1 sellion
+DEF Joe_2_r_infraorbitale HAnimSite { name "2_r_infraorbitale" translation -0.033 1.62 0.087 } #2 r_infraorbitale
+DEF Joe_3_l_infraorbitale HAnimSite { name "3_l_infraorbitale" translation 0.033 1.62 0.087 } #3 l_infraorbitale
+DEF Joe_4_supramenton HAnimSite { name "4_supramenton" translation 0.0 1.55 0.097 } #4 supramenton
+DEF Joe_5_r_tragion HAnimSite { name "5_r_tragion" translation -0.077 1.64 -0.01 } #5 r_tragion
+DEF Joe_6_r_gonion HAnimSite { name "6_r_gonion" translation -0.0527 1.58 0.015 } #6 r_gonion
+DEF Joe_7_l_tragion HAnimSite { name "7_l_tragion" translation 0.077 1.64 -0.01 } #7 l_tragion
+DEF Joe_8_l_gonion HAnimSite { name "8_l_gonion" translation 0.0527 1.58 0.015 } #8 l_gonion
+DEF Joe_9_nuchale HAnimSite { name "9_nuchale" translation 0.0 1.625 -0.0925 } #9 nuchalee
+DEF Joe_10_r_clavicle HAnimSite { name "10_r_clavicle" translation -0.03 1.46 0.035 } #10 r_clavicle
+DEF Joe_11_suprasternale HAnimSite { name "11_suprasternale" translation 0.0 1.44 0.03 } #11 suprasternale
+DEF Joe_12_l_clavicle HAnimSite { name "12_l_clavicle" translation 0.03 1.46 0.035 } #12 l_clavicle
+DEF Joe_13_r_thelion HAnimSite { name "13_r_thelion" translation -0.1135 1.318 0.095 } #13 r_thelion
+DEF Joe_14_l_thelion HAnimSite { name "14_l_thelion" translation 0.1135 1.318 0.095 } #14 l_thelion
+DEF Joe_15_substernale HAnimSite { name "15_substernale" translation 0.0 1.25 0.113 } #15 substernale
+DEF Joe_16_r_rib10 HAnimSite { name "16_r_rib10" translation -0.087 1.19 0.09 } #16 r_rib10
+DEF Joe_17_r_asis HAnimSite { name "17_r_asis" translation -0.0935 1.03 0.075 } #17 r_asis
+DEF Joe_18_l_rib10 HAnimSite { name "18_l_rib10" translation 0.087 1.19 0.09 } #18 l_rib10
+DEF Joe_19_l_asis HAnimSite { name "19_l_asis" translation 0.0935 1.03 0.075 } #19 l_asis
+DEF Joe_20_r_iliocristale HAnimSite { name "20_r_iliocristale" translation -0.1425 1.065 0.0033 } #20 r_iliocristale
+DEF Joe_21_r_trochanterion HAnimSite { name "21_r_trochanterion" translation -0.15 0.9 -0.01 } #21 r_trochanterionion
+DEF Joe_22_l_iliocristale HAnimSite { name "22_l_iliocristale" translation 0.1425 1.065 0.0033 } #22 l_iliocristale
+DEF Joe_23_l_trochanterion HAnimSite { name "23_l_trochanterion" translation 0.15 0.9 -0.01 } #23 l_trochanterionion
+DEF Joe_24_cervicale HAnimSite { name "24_cervicale" translation 0.0 1.53 -0.084 } #24 cervicale
+DEF Joe_25_rib10_midspine HAnimSite { name "25_rib10_midspine" translation 0.0049 1.1908 -0.1113 } #25 rib10_midspine
+DEF Joe_26_r_psis HAnimSite { name "26_r_psis" translation -0.0773 1.019 -0.12 } #26 r_psis
+DEF Joe_27_l_psis HAnimSite { name "27_l_psis" translation 0.0773 1.019 -0.12 } #27 l_psis
+DEF Joe_28_waist_preferred_posterior HAnimSite { name "28_waist_preferred_posterior" translation 0.005 1.0915 -0.1091 } #28 waist_preferred_posterior
+DEF Joe_29_r_acromion HAnimSite { name "29_r_acromion" translation -0.178 1.4825 -0.0625 } #29 r_acromion
+DEF Joe_30_r_axilla_proximal HAnimSite { name "30_r_axilla_proximal" translation -0.17 1.38 0.007 } #30 r_axilla_proximal
+DEF Joe_31_r_radial_styloid HAnimSite { name "31_r_radial_styloid" translation -0.1884 0.8676 -0.036 } #31 r_radial_styloid
+DEF Joe_32_r_axilla_distal HAnimSite { name "32_r_axilla_distal" translation -0.16 1.38 -0.127 } #32 r_axilla_distal
+DEF Joe_33_r_olecranon HAnimSite { name "33_r_olecranon" translation -0.2 1.1388 -0.08 } #33 r_olecranon
+DEF Joe_34_r_humeral_lateral_epicondyle HAnimSite { name "34_r_humeral_lateral_epicondyle" translation -0.244 1.1388 -0.04 } #34 r_humeral_lateral_epicondyle
+DEF Joe_35_r_humeral_medial_epicondyle HAnimSite { name "35_r_humeral_medial_epicondyle" translation -0.165 1.1388 -0.04 } #35 r_humeral_medial_epicondyle
+DEF Joe_36_r_radiale HAnimSite { name "36_r_radiale" translation -0.23 1.133 -0.055 } #36 r_radiale Not used in this skin
+DEF Joe_37_r_metacarpal_phalanx_2 HAnimSite { name "37_r_metacarpal_phalanx_2" translation -0.1977 0.8169 -0.0177 } #37 r_metacarpal_phalanx_2
+DEF Joe_38_r_dactylion HAnimSite { name "38_r_dactylion" translation -0.1941 0.6772 -0.0423 } #38 r_dactylion tip of middle finger
+DEF Joe_39_r_ulnar_styloid HAnimSite { name "39_r_ulnar_styloid" translation -0.2117 0.8562 -0.0584 } #39 r_ulnar_styloid
+DEF Joe_40_r_metacarpal_phalanx_5 HAnimSite { name "40_r_metacarpal_phalanx_5" translation -0.1929 0.7890 -0.1064 } #40 r_metacarpal_phalanx_5
+DEF Joe_41_l_acromion HAnimSite { name "41_l_acromion" translation 0.175 1.4825 -0.06 } #41 l_acromion
+DEF Joe_42_l_axilla_proximal HAnimSite { name "42_l_axilla_proximal" translation 0.17 1.38 0.007 } #42 l_axilla_proximal
+DEF Joe_43_l_radial_styloid HAnimSite { name "43_l_radial_styloid" translation 0.1901 0.8645 -0.0415 } #43 l_radial_styloid
+DEF Joe_44_l_axilla_distal HAnimSite { name "44_l_axilla_distal" translation 0.16 1.38 -0.125 } #44 l_axilla_distal
+DEF Joe_45_l_olecranon HAnimSite { name "45_l_olecranon" translation 0.2 1.1388 -0.08 } #45 l_olecranon
+DEF Joe_46_l_humeral_medial_epicondyle HAnimSite { name "46_l_humeral_medial_epicondyle" translation 0.165 1.1388 -0.04 } #46 l_humeral_medial_epicondyle
+DEF Joe_47_l_humeral_lateral_epicondyle HAnimSite { name "47_l_humeral_lateral_epicondyle" translation 0.244 1.1388 -0.04 } #47 l_humeral_lateral_epicondyle
+DEF Joe_48_l_radiale HAnimSite { name "48_l_radiale" translation 0.23 1.133 -0.055 } #48 l_radiale Not used in this skin
+DEF Joe_49_l_metacarpal_phalanx_2 HAnimSite { name "49_l_metacarpal_phalanx_2" translation 0.2009 0.8139 -0.0237 } #49 l_metacarpal_phalanx_2
+DEF Joe_50_l_dactylion HAnimSite { name "50_l_dactylion" translation 0.2056 0.6743 -0.0482 } #50 l_dactylion
+DEF Joe_51_l_ulnar_styloid HAnimSite { name "51_l_ulnar_styloid" translation 0.2142 0.8529 -0.0648 } #51 l_ulnar_styloid
+DEF Joe_52_l_metacarpal_phalanx_5 HAnimSite { name "52_l_metacarpal_phalanx_5" translation 0.1929 0.7860 -0.1122 } #52 l_metacarpal_phalanx_5
+DEF Joe_53_r_knee HAnimSite { name "53_r_knee" translation -0.1 0.4913 -0.03 } #53 r_knee_crease
+DEF Joe_54_r_femoral_lateral_epicondyle HAnimSite { name "54_r_femoral_lateral_epicondyle" translation -0.17 0.466 0.0 } #54 r_femoral_lateral_epicondyle
+DEF Joe_55_r_femoral_medial_epicondyle HAnimSite { name "55_r_femoral_medial_epicondyle" translation -0.05 0.466 0.0 } #55 r_femoral_medial_epicondyle
+DEF Joe_56_r_tarsal_distal_interphalangeal_2 HAnimSite { name "56_r_tarsal_distal_interphalangeal_2" translation -0.165 0.01 0.12 } #56 r_tarsal_distal_interphalangeal_2_phalanx_5
+DEF Joe_57_r_lateral_malleolus HAnimSite { name "57_r_lateral_malleolus" translation -0.15 0.07 0.0 } #57 r_lateral_malleolus
+DEF Joe_58_r_medial_malleolus HAnimSite { name "58_r_medial_malleolus" translation -0.085 0.086 0.0125 } #58 r_medial_malleolus
+DEF Joe_59_r_sphyrion HAnimSite { name "59_r_sphyrion" translation -0.09 0.056 0.0125 } #59 r_sphyrion
+DEF Joe_60_r_tarsal_distal_interphalangeal_2 HAnimSite { name "60_r_tarsal_distal_interphalangeal_2" translation -0.115 0.02 0.122 } #60 r_tarsal_distal_interphalangeal_2_phalanx_1
+DEF Joe_61_r_calcaneus HAnimSite { name "61_r_calcaneus" translation -0.115 0.04 -0.055 } #61 r_calcaneus_posterior
+DEF Joe_62_r_tarsal_distal_phalanx_2 HAnimSite { name "62_r_tarsal_distal_phalanx_2" translation -0.110 0.011 0.19 } #62 r_tarsal_distal_phalanx_2
+DEF Joe_63_l_knee HAnimSite { name "63_l_knee" translation 0.0993 0.4881 -0.0309 } #63 l_knee_crease
+DEF Joe_64_l_femoral_lateral_epicondyle HAnimSite { name "64_l_femoral_lateral_epicondyle" translation 0.17 0.466 0.0 } #64 l_femoral_lateral_epicondyle
+DEF Joe_65_l_femoral_medial_epicondyle HAnimSite { name "65_l_femoral_medial_epicondyle" translation 0.05 0.4867 0.0 } #65 l_femoral_medial_epicondyle
+DEF Joe_66_l_metatarsal_2 HAnimSite { name "66_l_metatarsal_2" translation 0.165 0.01 0.12 } #66 l_metatarsal_2_phalanx_5
+DEF Joe_67_l_lateral_malleolus HAnimSite { name "67_l_lateral_malleolus" translation 0.15 0.07 0.0 } #67 l_lateral_malleolus
+DEF Joe_68_l_medial_malleolus HAnimSite { name "68_l_medial_malleolus" translation 0.085 0.086 0.0125 } #68 l_medial_malleolus
+DEF Joe_69_l_sphyrion HAnimSite { name "69_l_sphyrion" translation 0.09 0.056 0.0125 } #69 l_sphyrion
+DEF Joe_70_l_metatarsal_2 HAnimSite { name "70_l_metatarsal_2" translation 0.115 0.02 0.122 } #70 l_metatarsal_2_phalanx_1
+DEF Joe_71_l_calcaneus HAnimSite { name "71_l_calcaneus" translation 0.115 0.04 -0.055 } #71 l_calcaneus_posterior
+DEF Joe_72_l_tarsal_distal_phalanx_2 HAnimSite { name "72_l_tarsal_distal_phalanx_2" translation 0.110 0.011 0.19 } #72 l_tarsal_distal_phalanx_2
+DEF Joe_73_crotch HAnimSite { name "73_crotch" translation 0.0 0.875 0.0 } #73 crotch
+DEF Joe_74_r_neck_base HAnimSite { name "74_r_neck_base" translation -0.0646 1.5149 -0.038 } #74 r_neck_base
+DEF Joe_75_l_neck_base HAnimSite { name "75_l_neck_base" translation 0.0646 1.5149 -0.038 } #75 l_neck_base
+DEF Joe_76_navel HAnimSite { name "76_navel" translation 0.0 1.07225 0.09 } #76 navel
+DEF Joe_77_r_acromioclavicular HAnimSite { name "77_r_acromioclavicular" translation -0.11 1.427 -0.1375 } #77 add r_acromioclavicular back
+DEF Joe_78_r_shoulder HAnimSite { name "78_r_shoulder" translation -0.235 1.42 -0.0625 } #78 add r_shoulder skin outboard
+DEF Joe_79_l_acromioclavicular HAnimSite { name "79_l_acromioclavicular" translation 0.11 1.427 -0.1375 } #79 add l_acromioclavicular back
+DEF Joe_80_l_shoulder HAnimSite { name "80_l_shoulder" translation 0.235 1.42 -0.0625 } #80 add l_shoulder skin outboard
+DEF Joe_81_add_center_top_back HAnimSite { name "81_add_center_top_back" translation 0.0 1.41 -0.145 } #81 add_center_top_back
+DEF Joe_82_add_center_front_lower HAnimSite { name "82_add_center_front_lower" translation 0.0 0.925 0.08 } #82 add_center_front_lower
+DEF Joe_83_add_back_opposite_rib10 HAnimSite { name "83_add_back_opposite_rib10" translation -0.087 1.19 -0.09 } #83 add_back_opposite_rib10
+DEF Joe_84_add_back_opposite_rib10 HAnimSite { name "84_add_back_opposite_rib10" translation 0.087 1.19 -0.09 } #84 add_back_opposite_rib10
+DEF Joe_85_add_mid_left_top HAnimSite { name "85_add_mid_left_top" translation 0.172 1.32 -0.03 } #85 add_mid_left_top
+DEF Joe_86_add_mid_right_top HAnimSite { name "86_add_mid_right_top" translation -0.172 1.32 -0.03 } #86 add_mid_right_top
+DEF Joe_87_add_mid_left_mid HAnimSite { name "87_add_mid_left_mid" translation 0.15 1.23 -0.015 } #87 add_mid_left_mid
+DEF Joe_88_add_mid_right_mid HAnimSite { name "88_add_mid_right_mid" translation -0.15 1.23 -0.015 } #88 add_mid_right_mid
+DEF Joe_89_l_hip HAnimSite { name "89_l_hip" translation 0.079 0.92 -0.14 } #89 add back of l_hip
+DEF Joe_90_l_hip HAnimSite { name "90_l_hip" translation 0.1 0.90 0.077 } #90 add front of l_hip
+DEF Joe_91_r_hip HAnimSite { name "91_r_hip" translation -0.079 0.92 -0.14 } #91 add back of r_hip
+DEF Joe_92_r_hip HAnimSite { name "92_r_hip" translation -0.1 0.90 0.075 } #92 add front of r_hip
+DEF Joe_93_add_between_legs HAnimSite { name "93_add_between_legs" translation 0.0 0.87 0.0 } #93 add_between_legs
+DEF Joe_94_l_hip HAnimSite { name "94_l_hip" translation 0.171 0.65 0.0 } #94 add below l_hip outside
+DEF Joe_95_l_hip HAnimSite { name "95_l_hip" translation 0.02 0.65 0.0 } #95 add below l_hip inside
+DEF Joe_96_l_hip HAnimSite { name "96_l_hip" translation 0.1 0.65 -0.08 } #96 add below l_hip back
+DEF Joe_97_l_hip HAnimSite { name "97_l_hip" translation 0.1 0.65 0.07 } #97 add below l_hip front
+DEF Joe_98_r_hip HAnimSite { name "98_r_hip" translation -0.171 0.65 0.0 } #98 add below r_hip outside
+DEF Joe_99_r_hip HAnimSite { name "99_r_hip" translation -0.02 0.65 0.0 } #99 add below r_hip inside
+DEF Joe_100_r_hip HAnimSite { name "100_r_hip" translation -0.1 0.65 -0.08 } #100 add below r_hip back
+DEF Joe_101_r_hip HAnimSite { name "101_r_hip" translation -0.1 0.65 0.07 } #101 add below r_hip front
+DEF Joe_102_add_at_left_mid_arm HAnimSite { name "102_add_at_left_mid_arm" translation 0.25 1.27 -0.04 } #102 add_at_left_mid_arm
+DEF Joe_103_add_at_left_mid_arm HAnimSite { name "103_add_at_left_mid_arm" translation 0.17 1.27 -0.04 } #103 add_at_left_mid_arm
+DEF Joe_104_add_at_mid_left_arm HAnimSite { name "104_add_at_mid_left_arm" translation 0.2 1.27 -0.09 } #104 add_at_mid_left_arm
+DEF Joe_105_add_at_left_mid_arm HAnimSite { name "105_add_at_left_mid_arm" translation 0.2 1.27 0.02 } #105 add_at_left_mid_arm
+DEF Joe_106_l_humeral_lateral_epicondyle HAnimSite { name "106_l_humeral_lateral_epicondyle" translation 0.244 1.1388 -0.04 } #106 add at left elbow outer use l_humeral_lateral_epicondyle
+DEF Joe_107_l_humeral_medial_epicondyle HAnimSite { name "107_l_humeral_medial_epicondyle" translation 0.165 1.1388 -0.04 } #107 add at left elbow inner use l_humeral_medial_epicondyle
+DEF Joe_108_l_olecranon HAnimSite { name "108_l_olecranon" translation 0.2 1.1388 -0.08 } #108 add at left elbow back use l_olecranon
+DEF Joe_109_add_at_left_elbow_front HAnimSite { name "109_add_at_left_elbow_front" translation 0.2 1.1388 -0.013 } #109 add_at_left_elbow_front
+DEF Joe_110_add_below_left_elbow_outside_front HAnimSite { name "110_add_below_left_elbow_outside_front" translation 0.225 1.0 -0.01 } #110 add_below_left_elbow_outside_front
+DEF Joe_111_add_below_left_elbow_outside_back HAnimSite { name "111_add_below_left_elbow_outside_back" translation 0.225 1.0 -0.07 } #111 add_below_left_elbow_outside_back
+DEF Joe_112_add_below_left_elbow_inside_front HAnimSite { name "112_add_below_left_elbow_inside_front" translation 0.185 1.0 -0.01 } #112 add_below_left_elbow_inside_front
+DEF Joe_113_add_below_left_elbow_inside_back HAnimSite { name "113_add_below_left_elbow_inside_back" translation 0.185 1.0 -0.07 } #113 add_below_left_elbow_inside_back
+DEF Joe_114_0_at_elbow_center_not_used HAnimSite { name "114_0_at_elbow_center_not_used" translation 0.2 1.1388 -0.04 } #114 0_at_elbow_center_not_used
+DEF Joe_115_1_add_above_wrist_outside_front HAnimSite { name "115_1_add_above_wrist_outside_front" translation 0.225 0.92 -0.04 } #115 1_add_above_wrist_outside_front
+DEF Joe_116_2_add_above_wrist_inside_front HAnimSite { name "116_2_add_above_wrist_inside_front" translation 0.175 0.92 -0.04 } #116 2_add_above_wrist_inside_front
+DEF Joe_117_3_add_above_wrist_inside_back HAnimSite { name "117_3_add_above_wrist_inside_back" translation 0.2 0.92 -0.065 } #117 3_add_above_wrist_inside_back
+DEF Joe_118_4_add_above_wrist_front HAnimSite { name "118_4_add_above_wrist_front" translation 0.2 0.92 -0.015 } #118 4_add_above_wrist_front
+DEF Joe_119_5_left_wrist_outside_front HAnimSite { name "119_5_left_wrist_outside_front" translation 0.225 0.89 -0.04 } #119 5_left_wrist_outside_front
+DEF Joe_120_6_left_wrist_outside_front HAnimSite { name "120_6_left_wrist_outside_front" translation 0.175 0.89 -0.04 } #120 6_left_wrist_outside_front
+DEF Joe_121_7_left_wrist_outside_front HAnimSite { name "121_7_left_wrist_outside_front" translation 0.2 0.89 -0.065 } #121 7_left_wrist_outside_front
+DEF Joe_122_8_left_wrist_outside_front HAnimSite { name "122_8_left_wrist_outside_front" translation 0.2 0.89 -0.015 } #122 8_left_wrist_outside_front
+DEF Joe_123_9_below_left_wrist HAnimSite { name "123_9_below_left_wrist" translation 0.218 0.86 -0.04 } #123 9_below_left_wrist
+DEF Joe_124_10__below_left_wrist HAnimSite { name "124_10__below_left_wrist" translation 0.184 0.86 -0.04 } #124 10__below_left_wrist
+DEF Joe_125_1___below_left_wrist HAnimSite { name "125_1___below_left_wrist" translation 0.2 0.87 -0.07 } #125 1___below_left_wrist
+DEF Joe_126_r_carpometacarpal_1 HAnimSite { name "126_r_carpometacarpal_1" translation 0.2 0.87 0.0 } #126 2 # left hand metacarples # r_carpometacarpal_1
+DEF Joe_127_3 HAnimSite { name "127_3" translation 0.21 0.85 0.0 } #127 3
+DEF Joe_128_l_carpometacarpal_2 HAnimSite { name "128_l_carpometacarpal_2" translation 0.1854 0.85 0.0 } #128 4 # l_carpometacarpal_2
+DEF Joe_129_5 HAnimSite { name "129_5" translation 0.212 0.84 -0.015 } #129 5
+DEF Joe_130_l_carpometacarpal_3 HAnimSite { name "130_l_carpometacarpal_3" translation 0.183 0.84 -0.015 } #130 6 # l_carpometacarpal_3
+DEF Joe_131_7 HAnimSite { name "131_7" translation 0.213 0.835 -0.04 } #131 7
+DEF Joe_132_l_carpometacarpal_4 HAnimSite { name "132_l_carpometacarpal_4" translation 0.190 0.835 -0.04 } #132 8 # l_carpometacarpal_4
+DEF Joe_133_9 HAnimSite { name "133_9" translation 0.211 0.835 -0.065 } #133 9
+DEF Joe_134_l_carpometacarpal_5 HAnimSite { name "134_l_carpometacarpal_5" translation 0.192 0.835 -0.065 } #134 20 # l_carpometacarpal_5
+DEF Joe_135_1 HAnimSite { name "135_1" translation 0.208 0.84 -0.085 } #135 1
+DEF Joe_136_2 HAnimSite { name "136_2" translation 0.190 0.84 -0.085 } #136 2
+DEF Joe_137_3__l_thumb_web HAnimSite { name "137_3__l_thumb_web" translation 0.2 0.84 -0.095 } #137 3__l_thumb_web
+DEF Joe_138_4 HAnimSite { name "138_4" translation 0.215 0.82 0.0 } #138 4
+DEF Joe_139_5 HAnimSite { name "139_5" translation 0.193 0.815 0.005 } #139 5
+DEF Joe_140_6__l_thumb_2 HAnimSite { name "140_6__l_thumb_2" translation 0.198 0.80 0.012 } #140 6__l_thumb_2
+DEF Joe_141_7 HAnimSite { name "141_7" translation 0.21 0.82 0.03 } #141 7
+DEF Joe_142_8 HAnimSite { name "142_8" translation 0.19 0.82 0.03 } #142 8
+DEF Joe_143_9__l_thumb_3 HAnimSite { name "143_9__l_thumb_3" translation 0.2 0.835 0.039 } #143 9__l_thumb_3
+DEF Joe_144_30 HAnimSite { name "144_30" translation 0.212 0.8 0.05 } #144 30
+DEF Joe_145_1 HAnimSite { name "145_1" translation 0.188 0.8 0.05 } #145 1
+DEF Joe_146_2 HAnimSite { name "146_2" translation 0.2 0.807 0.057 } #146 2
+DEF Joe_147_3__l_thumb_end HAnimSite { name "147_3__l_thumb_end" translation 0.2 0.793 0.035 } #147 3__l_thumb_end
+DEF Joe_148_4_tip HAnimSite { name "148_4_tip" translation 0.2 0.774 0.076 } #148 4_tip
+DEF Joe_149_5 HAnimSite { name "149_5" translation 0.212 0.78 0.07 } #149 5
+DEF Joe_150_6 HAnimSite { name "150_6" translation 0.188 0.78 0.07 } #150 6
+DEF Joe_151_7 HAnimSite { name "151_7" translation 0.2 0.785 0.075 } #151 7
+DEF Joe_152_l_metacarpophalangeal_2 HAnimSite { name "152_l_metacarpophalangeal_2" translation 0.2 0.77 0.062 } #152 8 # l_metacarpophalangeal_2
+DEF Joe_153_9 HAnimSite { name "153_9" translation 0.215 0.793 -0.015 } #153 9
+DEF Joe_154_40 HAnimSite { name "154_40" translation 0.187 0.793 -0.015 } #154 40
+DEF Joe_155_l_metacarpophalangeal_3 HAnimSite { name "155_l_metacarpophalangeal_3" translation 0.2 0.793 -0.005 } #155 1 # l_metacarpophalangeal_3
+DEF Joe_156_2 HAnimSite { name "156_2" translation 0.215 0.788 -0.04 } #156 2
+DEF Joe_157_l_metacarpophalangeal_4 HAnimSite { name "157_l_metacarpophalangeal_4" translation 0.187 0.788 -0.04 } #157 3 # l_metacarpophalangeal_4
+DEF Joe_158_4 HAnimSite { name "158_4" translation 0.215 0.793 -0.065 } #158 4
+DEF Joe_159_l_metacarpophalangeal_5 HAnimSite { name "159_l_metacarpophalangeal_5" translation 0.187 0.793 -0.065 } #159 5 # l_metacarpophalangeal_5
+DEF Joe_160_6 HAnimSite { name "160_6" translation 0.21 0.79 -0.085 } #160 6
+DEF Joe_161_7 HAnimSite { name "161_7" translation 0.19 0.79 -0.085 } #161 7
+DEF Joe_162_8__l_between_fingers HAnimSite { name "162_8__l_between_fingers" translation 0.2 0.79 -0.095 } #162 8__l_between_fingers
+DEF Joe_163_9 HAnimSite { name "163_9" translation 0.19 0.77 -0.0275 } #163 9
+DEF Joe_164_50 HAnimSite { name "164_50" translation 0.19 0.77 -0.0525 } #164 50
+DEF Joe_165_l_carpal_proximal_interphalangeal_2 HAnimSite { name "165_l_carpal_proximal_interphalangeal_2" translation 0.19 0.78 -0.0775 } #165 1 # l_carpal_proximal_interphalangeal_2
+DEF Joe_166_2 HAnimSite { name "166_2" translation 0.212 0.745 -0.015 } #166 2
+DEF Joe_167_3 HAnimSite { name "167_3" translation 0.188 0.745 -0.02 } #167 3
+DEF Joe_168_4 HAnimSite { name "168_4" translation 0.2 0.745 -0.0255 } #168 4
+DEF Joe_169_l_carpal HAnimSite { name "169_l_carpal" translation 0.2 0.745 -0.0045 } #169 5 # l_carpal_distal_interphalangeal_2
+DEF Joe_170_6 HAnimSite { name "170_6" translation 0.211 0.72 -0.015 } #170 6
+DEF Joe_171_7 HAnimSite { name "171_7" translation 0.189 0.72 -0.015 } #171 7
+DEF Joe_172_8 HAnimSite { name "172_8" translation 0.2 0.72 -0.0252 } #172 8
+DEF Joe_173_9__l_indexend HAnimSite { name "173_9__l_indexend" translation 0.2 0.72 -0.0048 } #173 9__l_indexend
+DEF Joe_174_60 HAnimSite { name "174_60" translation 0.21 0.695 -0.015 } #174 60
+DEF Joe_175_1 HAnimSite { name "175_1" translation 0.19 0.695 -0.015 } #175 1
+DEF Joe_176_2 HAnimSite { name "176_2" translation 0.2 0.695 -0.025 } #176 2
+DEF Joe_177_3 HAnimSite { name "177_3" translation 0.2 0.695 -0.005 } #177 3
+DEF Joe_178_l_carpal_proximal_interphalangeal_3 HAnimSite { name "178_l_carpal_proximal_interphalangeal_3" translation 0.2 0.685 -0.015 } #178 4 # l_carpal_proximal_interphalangeal_3
+DEF Joe_179_5 HAnimSite { name "179_5" translation 0.215 0.74 -0.04 } #179 5
+DEF Joe_180_6 HAnimSite { name "180_6" translation 0.185 0.74 -0.04 } #180 6
+DEF Joe_181_7 HAnimSite { name "181_7" translation 0.2 0.74 -0.055 } #181 7
+DEF Joe_182_l_carpal_distal_interphalangeal_3 HAnimSite { name "182_l_carpal_distal_interphalangeal_3" translation 0.2 0.74 -0.025 } #182 8 # l_carpal_distal_interphalangeal_3
+DEF Joe_183_9 HAnimSite { name "183_9" translation 0.21 0.7142 -0.04 } #183 9
+DEF Joe_184_70 HAnimSite { name "184_70" translation 0.19 0.7142 -0.04 } #184 70
+DEF Joe_185_1 HAnimSite { name "185_1" translation 0.2 0.7142 -0.053 } #185 1
+DEF Joe_186_2__l_middleend HAnimSite { name "186_2__l_middleend" translation 0.2 0.7142 -0.027 } #186 2__l_middleend
+DEF Joe_187_3 HAnimSite { name "187_3" translation 0.21 0.68 -0.04 } #187 3
+DEF Joe_188_4 HAnimSite { name "188_4" translation 0.19 0.68 -0.04 } #188 4
+DEF Joe_189_5 HAnimSite { name "189_5" translation 0.2 0.68 -0.05 } #189 5
+DEF Joe_190_6 HAnimSite { name "190_6" translation 0.2 0.68 -0.03 } #190 6
+DEF Joe_191_l_carpal_proximal_interphalangeal_4 HAnimSite { name "191_l_carpal_proximal_interphalangeal_4" translation 0.2 0.67 -0.04 } #191 7 # l_carpal_proximal_interphalangeal_4
+DEF Joe_192_8 HAnimSite { name "192_8" translation 0.212 0.74 -0.065 } #192 8
+DEF Joe_193_9 HAnimSite { name "193_9" translation 0.188 0.74 -0.065 } #193 9
+DEF Joe_194_80 HAnimSite { name "194_80" translation 0.2 0.74 -0.0756 } #194 80
+DEF Joe_195_l_carpal_distal_interphalangeal_4 HAnimSite { name "195_l_carpal_distal_interphalangeal_4" translation 0.2 0.74 -0.0542 } #195 1 # l_carpal_distal_interphalangeal_4
+DEF Joe_196_2 HAnimSite { name "196_2" translation 0.21 0.7177 -0.065 } #196 2
+DEF Joe_197_3 HAnimSite { name "197_3" translation 0.19 0.7177 -0.065 } #197 3
+DEF Joe_198_4 HAnimSite { name "198_4" translation 0.2 0.7177 -0.0751 } #198 4
+DEF Joe_199_5__l_ringend HAnimSite { name "199_5__l_ringend" translation 0.2 0.7177 -0.0549 } #199 5__l_ringend
+DEF Joe_200_6 HAnimSite { name "200_6" translation 0.21 0.695 -0.065 } #200 6
+DEF Joe_201_7 HAnimSite { name "201_7" translation 0.19 0.695 -0.065 } #201 7
+DEF Joe_202_8 HAnimSite { name "202_8" translation 0.2 0.695 -0.075 } #202 8
+DEF Joe_203_9 HAnimSite { name "203_9" translation 0.2 0.695 -0.055 } #203 9
+DEF Joe_204_l_carpal HAnimSite { name "204_l_carpal" translation 0.2 0.685 -0.065 } #204 90 # l_carpal_proximal_interphalangeal_5
+DEF Joe_205_1 HAnimSite { name "205_1" translation 0.211 0.755 -0.085 } #205 1
+DEF Joe_206_2 HAnimSite { name "206_2" translation 0.189 0.755 -0.085 } #206 2
+DEF Joe_207_3 HAnimSite { name "207_3" translation 0.2 0.755 -0.0952 } #207 3
+DEF Joe_208_l_carpal_distal_interphalangeal_5 HAnimSite { name "208_l_carpal_distal_interphalangeal_5" translation 0.2 0.755 -0.0748 } #208 4 # l_carpal_distal_interphalangeal_5
+DEF Joe_209_5 HAnimSite { name "209_5" translation 0.21 0.735 -0.085 } #209 5
+DEF Joe_210_6 HAnimSite { name "210_6" translation 0.19 0.735 -0.085 } #210 6
+DEF Joe_211_7 HAnimSite { name "211_7" translation 0.2 0.735 -0.0951 } #211 7
+DEF Joe_212_8__l_pinkyend HAnimSite { name "212_8__l_pinkyend" translation 0.2 0.735 -0.0749 } #212 8__l_pinkyend
+DEF Joe_213_9 HAnimSite { name "213_9" translation 0.21 0.72 -0.085 } #213 9
+DEF Joe_214_100 HAnimSite { name "214_100" translation 0.19 0.72 -0.085 } #214 100
+DEF Joe_215_1 HAnimSite { name "215_1" translation 0.2 0.72 -0.095 } #215 1
+DEF Joe_216_2 HAnimSite { name "216_2" translation 0.2 0.72 -0.075 } #216 2
+DEF Joe_217_3 HAnimSite { name "217_3" translation 0.2 0.71 -0.085 } #217 3
+DEF Joe_218_114_add_at_right_mid_arm_outside HAnimSite { name "218_114_add_at_right_mid_arm_outside" translation -0.23 1.23 -0.04 } #218 114_add_at_right_mid_arm_outside
+DEF Joe_219_115_add_at_right_mid_arm_inside HAnimSite { name "219_115_add_at_right_mid_arm_inside" translation -0.16 1.23 -0.04 } #219 115_add_at_right_mid_arm_inside
+DEF Joe_220_116_add_at_right_mid_arm_back HAnimSite { name "220_116_add_at_right_mid_arm_back" translation -0.2 1.235 -0.105 } #220 116_add_at_right_mid_arm_back
+DEF Joe_221_117_add_at_right_mid_arm_front HAnimSite { name "221_117_add_at_right_mid_arm_front" translation -0.2 1.255 0.02 } #221 117_add_at_right_mid_arm_front
+DEF Joe_222_r_humeral_lateral_epicondyle HAnimSite { name "222_r_humeral_lateral_epicondyle" translation -0.244 1.1388 -0.04 } #222 118 add at right elbow outer use r_humeral_lateral_epicondyle
+DEF Joe_223_r_humeral_medial_epicondyle HAnimSite { name "223_r_humeral_medial_epicondyle" translation -0.165 1.1388 -0.04 } #223 119 add at right elbow inner use r_humeral_medial_epicondyle
+DEF Joe_224_r_olecranon HAnimSite { name "224_r_olecranon" translation -0.2 1.1388 -0.08 } #224 120 add at right elbow back use r_olecranon
+DEF Joe_225_121_add_at_right_elbow_front HAnimSite { name "225_121_add_at_right_elbow_front" translation -0.2 1.1388 0.013 } #225 121_add_at_right_elbow_front
+DEF Joe_226_122_add_below_right_elbow_outside_front HAnimSite { name "226_122_add_below_right_elbow_outside_front" translation -0.225 1.0 -0.01 } #226 122_add_below_right_elbow_outside_front
+DEF Joe_227_123_add_below_right_elbow_outside_back HAnimSite { name "227_123_add_below_right_elbow_outside_back" translation -0.225 1.0 -0.07 } #227 123_add_below_right_elbow_outside_back
+DEF Joe_228_124_add_below_right_elbow_inside_front HAnimSite { name "228_124_add_below_right_elbow_inside_front" translation -0.185 1.0 -0.01 } #228 124_add_below_right_elbow_inside_front
+DEF Joe_229_125_add_below_right_elbow_inside_back HAnimSite { name "229_125_add_below_right_elbow_inside_back" translation -0.185 1.0 -0.07 } #229 125_add_below_right_elbow_inside_back
+DEF Joe_230_0_at_elbow_center_not_used HAnimSite { name "230_0_at_elbow_center_not_used" translation -0.2 1.1388 -0.04 } #230 0_at_elbow_center_not_used
+DEF Joe_231_1__above_right_wrist HAnimSite { name "231_1__above_right_wrist" translation -0.225 0.92 -0.04 } #231 1__above_right_wrist
+DEF Joe_232_2 HAnimSite { name "232_2" translation -0.175 0.92 -0.04 } #232 2
+DEF Joe_233_3 HAnimSite { name "233_3" translation -0.2 0.92 -0.065 } #233 3
+DEF Joe_234_4__right_wrist HAnimSite { name "234_4__right_wrist" translation -0.2 0.92 -0.015 } #234 4__right_wrist
+DEF Joe_235_5 HAnimSite { name "235_5" translation -0.225 0.89 -0.04 } #235 5
+DEF Joe_236_6 HAnimSite { name "236_6" translation -0.175 0.89 -0.04 } #236 6
+DEF Joe_237_7 HAnimSite { name "237_7" translation -0.2 0.89 -0.065 } #237 7
+DEF Joe_238_8__below_right_wrist HAnimSite { name "238_8__below_right_wrist" translation -0.2 0.89 -0.015 } #238 8__below_right_wrist
+DEF Joe_239_9 HAnimSite { name "239_9" translation -0.218 0.86 -0.04 } #239 9
+DEF Joe_240_10 HAnimSite { name "240_10" translation -0.184 0.86 -0.04 } #240 10
+DEF Joe_241_1 HAnimSite { name "241_1" translation -0.2 0.87 -0.07 } #241 1
+DEF Joe_242_r_carpometacarpal_1 HAnimSite { name "242_r_carpometacarpal_1" translation -0.2 0.87 0.0 } #242 2 # right hand metacarples # r_carpometacarpal_1
+DEF Joe_243_3 HAnimSite { name "243_3" translation -0.21 0.85 0.0 } #243 3
+DEF Joe_244_r_carpometacarpal_2 HAnimSite { name "244_r_carpometacarpal_2" translation -0.1854 0.85 0.0 } #244 4 # r_carpometacarpal_2
+DEF Joe_245_5 HAnimSite { name "245_5" translation -0.212 0.84 -0.015 } #245 5
+DEF Joe_246_r_carpometacarpal_3 HAnimSite { name "246_r_carpometacarpal_3" translation -0.183 0.84 -0.015 } #246 6 # r_carpometacarpal_3
+DEF Joe_247_7 HAnimSite { name "247_7" translation -0.213 0.835 -0.04 } #247 7
+DEF Joe_248_r_carpometacarpal_4 HAnimSite { name "248_r_carpometacarpal_4" translation -0.190 0.835 -0.04 } #248 8 # r_carpometacarpal_4
+DEF Joe_249_9 HAnimSite { name "249_9" translation -0.211 0.835 -0.065 } #249 9
+DEF Joe_250_r_carpometacarpal_5 HAnimSite { name "250_r_carpometacarpal_5" translation -0.192 0.835 -0.065 } #250 20 # r_carpometacarpal_5
+DEF Joe_251_1 HAnimSite { name "251_1" translation -0.208 0.84 -0.085 } #251 1
+DEF Joe_252_2 HAnimSite { name "252_2" translation -0.190 0.84 -0.085 } #252 2
+DEF Joe_253_3__r_thumb_web HAnimSite { name "253_3__r_thumb_web" translation -0.2 0.84 -0.095 } #253 3__r_thumb_web
+DEF Joe_254_4 HAnimSite { name "254_4" translation -0.215 0.82 0.0 } #254 4
+DEF Joe_255_5 HAnimSite { name "255_5" translation -0.193 0.815 0.005 } #255 5
+DEF Joe_256_6__r_thumb_2 HAnimSite { name "256_6__r_thumb_2" translation -0.198 0.80 0.012 } #256 6__r_thumb_2
+DEF Joe_257_7 HAnimSite { name "257_7" translation -0.21 0.82 0.03 } #257 7
+DEF Joe_258_8 HAnimSite { name "258_8" translation -0.19 0.82 0.03 } #258 8
+DEF Joe_259_9__r_thumb_3 HAnimSite { name "259_9__r_thumb_3" translation -0.2 0.835 0.039 } #259 9__r_thumb_3
+DEF Joe_260_30 HAnimSite { name "260_30" translation -0.212 0.8 0.05 } #260 30
+DEF Joe_261_1 HAnimSite { name "261_1" translation -0.188 0.8 0.05 } #261 1
+DEF Joe_262_2 HAnimSite { name "262_2" translation -0.2 0.807 0.057 } #262 2
+DEF Joe_263_3__r_thumb_end HAnimSite { name "263_3__r_thumb_end" translation -0.2 0.793 0.035 } #263 3__r_thumb_end
+DEF Joe_264_4_tip HAnimSite { name "264_4_tip" translation -0.2 0.774 0.076 } #264 4_tip
+DEF Joe_265_5 HAnimSite { name "265_5" translation -0.212 0.78 0.07 } #265 5
+DEF Joe_266_6 HAnimSite { name "266_6" translation -0.188 0.78 0.07 } #266 6
+DEF Joe_267_7 HAnimSite { name "267_7" translation -0.2 0.785 0.075 } #267 7
+DEF Joe_268_r_metacarpophalangeal_2 HAnimSite { name "268_r_metacarpophalangeal_2" translation -0.2 0.77 0.062 } #268 8 # r_metacarpophalangeal_2
+DEF Joe_269_9 HAnimSite { name "269_9" translation -0.215 0.793 -0.015 } #269 9
+DEF Joe_270_40 HAnimSite { name "270_40" translation -0.187 0.793 -0.015 } #270 40
+DEF Joe_271_r_metacarpophalangeal_3 HAnimSite { name "271_r_metacarpophalangeal_3" translation -0.2 0.793 -0.005 } #271 1 # r_metacarpophalangeal_3
+DEF Joe_272_2 HAnimSite { name "272_2" translation -0.215 0.788 -0.04 } #272 2
+DEF Joe_273_r_metacarpophalangeal_4 HAnimSite { name "273_r_metacarpophalangeal_4" translation -0.187 0.788 -0.04 } #273 3 # r_metacarpophalangeal_4
+DEF Joe_274_4 HAnimSite { name "274_4" translation -0.215 0.793 -0.065 } #274 4
+DEF Joe_275_r_metacarpophalangeal_5 HAnimSite { name "275_r_metacarpophalangeal_5" translation -0.187 0.793 -0.065 } #275 5 # r_metacarpophalangeal_5
+DEF Joe_276_6 HAnimSite { name "276_6" translation -0.21 0.79 -0.085 } #276 6
+DEF Joe_277_7 HAnimSite { name "277_7" translation -0.19 0.79 -0.085 } #277 7
+DEF Joe_278_8__r_between_fingers HAnimSite { name "278_8__r_between_fingers" translation -0.2 0.79 -0.095 } #278 8__r_between_fingers
+DEF Joe_279_9 HAnimSite { name "279_9" translation -0.19 0.77 -0.0275 } #279 9
+DEF Joe_280_50 HAnimSite { name "280_50" translation -0.19 0.77 -0.0525 } #280 50
+DEF Joe_281_r_carpal_proximal_interphalangeal_2 HAnimSite { name "281_r_carpal_proximal_interphalangeal_2" translation -0.19 0.78 -0.0775 } #281 1 # r_carpal_proximal_interphalangeal_2
+DEF Joe_282_2 HAnimSite { name "282_2" translation -0.212 0.745 -0.015 } #282 2
+DEF Joe_283_3 HAnimSite { name "283_3" translation -0.188 0.745 -0.02 } #283 3
+DEF Joe_284_4 HAnimSite { name "284_4" translation -0.2 0.745 -0.0255 } #284 4
+DEF Joe_285_r_carpal_distal_interphalangeal_2 HAnimSite { name "285_r_carpal_distal_interphalangeal_2" translation -0.2 0.745 -0.0045 } #285 5 # r_carpal_distal_interphalangeal_2
+DEF Joe_286_6 HAnimSite { name "286_6" translation -0.211 0.72 -0.015 } #286 6
+DEF Joe_287_7 HAnimSite { name "287_7" translation -0.189 0.72 -0.015 } #287 7
+DEF Joe_288_8 HAnimSite { name "288_8" translation -0.2 0.72 -0.0252 } #288 8
+DEF Joe_289_9__r_indexend HAnimSite { name "289_9__r_indexend" translation -0.2 0.72 -0.0048 } #289 9__r_indexend
+DEF Joe_290_60 HAnimSite { name "290_60" translation -0.21 0.695 -0.015 } #290 60
+DEF Joe_291_1 HAnimSite { name "291_1" translation -0.19 0.695 -0.015 } #291 1
+DEF Joe_292_2 HAnimSite { name "292_2" translation -0.2 0.695 -0.025 } #292 2
+DEF Joe_293_3 HAnimSite { name "293_3" translation -0.2 0.695 -0.005 } #293 3
+DEF Joe_294_r_carpal HAnimSite { name "294_r_carpal" translation -0.2 0.685 -0.015 } #294 4 # r_carpal_proximal_interphalangeal_3
+DEF Joe_295_5 HAnimSite { name "295_5" translation -0.215 0.74 -0.04 } #295 5
+DEF Joe_296_6 HAnimSite { name "296_6" translation -0.185 0.74 -0.04 } #296 6
+DEF Joe_297_7 HAnimSite { name "297_7" translation -0.2 0.74 -0.055 } #297 7
+DEF Joe_298_r_carpal_distal_interphalangeal_3 HAnimSite { name "298_r_carpal_distal_interphalangeal_3" translation -0.2 0.74 -0.025 } #298 8 # r_carpal_distal_interphalangeal_3
+DEF Joe_299_9 HAnimSite { name "299_9" translation -0.21 0.7142 -0.04 } #299 9
+DEF Joe_300_70 HAnimSite { name "300_70" translation -0.19 0.7142 -0.04 } #300 70
+DEF Joe_301_1 HAnimSite { name "301_1" translation -0.2 0.7142 -0.053 } #301 1
+DEF Joe_302_2__r_middleend HAnimSite { name "302_2__r_middleend" translation -0.2 0.7142 -0.027 } #302 2__r_middleend
+DEF Joe_303_3 HAnimSite { name "303_3" translation -0.21 0.68 -0.04 } #303 3
+DEF Joe_304_4 HAnimSite { name "304_4" translation -0.19 0.68 -0.04 } #304 4
+DEF Joe_305_5 HAnimSite { name "305_5" translation -0.2 0.68 -0.05 } #305 5
+DEF Joe_306_6 HAnimSite { name "306_6" translation -0.2 0.68 -0.03 } #306 6
+DEF Joe_307_r_carpal HAnimSite { name "307_r_carpal" translation -0.2 0.67 -0.04 } #307 7 # r_carpal_proximal_interphalangeal_4
+DEF Joe_308_8 HAnimSite { name "308_8" translation -0.212 0.74 -0.065 } #308 8
+DEF Joe_309_9 HAnimSite { name "309_9" translation -0.188 0.74 -0.065 } #309 9
+DEF Joe_310_80 HAnimSite { name "310_80" translation -0.2 0.74 -0.0756 } #310 80
+DEF Joe_311_r_carpal_distal_interphalangeal_4 HAnimSite { name "311_r_carpal_distal_interphalangeal_4" translation -0.2 0.74 -0.0542 } #311 1 # r_carpal_distal_interphalangeal_4
+DEF Joe_312_2 HAnimSite { name "312_2" translation -0.21 0.7177 -0.065 } #312 2
+DEF Joe_313_3 HAnimSite { name "313_3" translation -0.19 0.7177 -0.065 } #313 3
+DEF Joe_314_4 HAnimSite { name "314_4" translation -0.2 0.7177 -0.0751 } #314 4
+DEF Joe_315_5__r_ringend HAnimSite { name "315_5__r_ringend" translation -0.2 0.7177 -0.0549 } #315 5__r_ringend
+DEF Joe_316_6 HAnimSite { name "316_6" translation -0.21 0.695 -0.065 } #316 6
+DEF Joe_317_7 HAnimSite { name "317_7" translation -0.19 0.695 -0.065 } #317 7
+DEF Joe_318_8 HAnimSite { name "318_8" translation -0.2 0.695 -0.075 } #318 8
+DEF Joe_319_9 HAnimSite { name "319_9" translation -0.2 0.695 -0.055 } #319 9
+DEF Joe_320_r_carpal_proximal_interphalangeal_5 HAnimSite { name "320_r_carpal_proximal_interphalangeal_5" translation -0.2 0.685 -0.065 } #320 90 # r_carpal_proximal_interphalangeal_5
+DEF Joe_321_1 HAnimSite { name "321_1" translation -0.211 0.755 -0.085 } #321 1
+DEF Joe_322_2 HAnimSite { name "322_2" translation -0.189 0.755 -0.085 } #322 2
+DEF Joe_323_3 HAnimSite { name "323_3" translation -0.2 0.755 -0.0952 } #323 3
+DEF Joe_324_r_carpal_distal_interphalangeal_5 HAnimSite { name "324_r_carpal_distal_interphalangeal_5" translation -0.2 0.755 -0.0748 } #324 4 # r_carpal_distal_interphalangeal_5
+DEF Joe_325_5 HAnimSite { name "325_5" translation -0.21 0.735 -0.085 } #325 5
+DEF Joe_326_6 HAnimSite { name "326_6" translation -0.19 0.735 -0.085 } #326 6
+DEF Joe_327_7 HAnimSite { name "327_7" translation -0.2 0.735 -0.0951 } #327 7
+DEF Joe_328_8__r_pinkyend HAnimSite { name "328_8__r_pinkyend" translation -0.2 0.735 -0.0749 } #328 8__r_pinkyend
+DEF Joe_329_9 HAnimSite { name "329_9" translation -0.21 0.72 -0.085 } #329 9
+DEF Joe_330_100 HAnimSite { name "330_100" translation -0.19 0.72 -0.085 } #330 100
+DEF Joe_331_1 HAnimSite { name "331_1" translation -0.2 0.72 -0.095 } #331 1
+DEF Joe_332_2 HAnimSite { name "332_2" translation -0.2 0.72 -0.075 } #332 2
+DEF Joe_333_3 HAnimSite { name "333_3" translation -0.2 0.71 -0.085 } #333 3
+DEF Joe_334_l_knee HAnimSite { name "334_l_knee" translation 0.115 0.466 0.06 } #334 add at l_knee front
+DEF Joe_335_l_knee HAnimSite { name "335_l_knee" translation 0.115 0.466 -0.055 } #335 add l_knee_crease
+DEF Joe_336_l_knee HAnimSite { name "336_l_knee" translation 0.15 0.466 0.0 } #336 add l_knee outside l_femoral_lateral_epicondyle
+DEF Joe_337_l_knee HAnimSite { name "337_l_knee" translation 0.05 0.466 0.0 } #337 add l_knee inside l_femoral_medial_epicondyle
+DEF Joe_338_l_knee HAnimSite { name "338_l_knee" translation 0.17 0.3 0.0 } #338 add below l_knee outside
+DEF Joe_339_l_knee HAnimSite { name "339_l_knee" translation 0.06 0.3 0.0 } #339 add below l_knee inside
+DEF Joe_340_l_knee HAnimSite { name "340_l_knee" translation 0.1 0.3 -0.05 } #340 add below l_knee back
+DEF Joe_341_l_knee HAnimSite { name "341_l_knee" translation 0.1 0.3 0.05 } #341 add below l_knee front
+DEF Joe_342_l_talocrural HAnimSite { name "342_l_talocrural" translation 0.15 0.07 0.0 } #342 add at l_talocrural outside
+DEF Joe_343_l_talocrural HAnimSite { name "343_l_talocrural" translation 0.085 0.086 0.0125 } #343 add at l_talocrural inside
+DEF Joe_344_l_talocrural HAnimSite { name "344_l_talocrural" translation 0.115 0.069 -0.045 } #344 add at l_talocrural back
+DEF Joe_345_l_talocrural HAnimSite { name "345_l_talocrural" translation 0.117 0.0975 0.0615 } #345 add at l_talocrural front
+DEF Joe_346_l_tarsometatarsal_2 HAnimSite { name "346_l_tarsometatarsal_2" translation 0.1375 0.006 -0.03 } #346 add at l_tarsometatarsal_2 outside
+DEF Joe_347_l_tarsometatarsal_2 HAnimSite { name "347_l_tarsometatarsal_2" translation 0.095 0.006 -0.03 } #347 add at l_tarsometatarsal_2 inside
+DEF Joe_348_l_tarsometatarsal_2 HAnimSite { name "348_l_tarsometatarsal_2" translation 0.115 0.015 -0.045 } #348 add at l_tarsometatarsal_2 rear
+DEF Joe_349_l_metatarsophalangeal_2 HAnimSite { name "349_l_metatarsophalangeal_2" translation 0.115 0.06 0.1 } #349 add at l_metatarsophalangeal_2 up
+DEF Joe_350_l_metatarsophalangeal_2 HAnimSite { name "350_l_metatarsophalangeal_2" translation 0.115 0.0 0.07 } #350 add at l_metatarsophalangeal_2 down
+DEF Joe_351_l_metatarsophalangeal_2 HAnimSite { name "351_l_metatarsophalangeal_2" translation 0.165 0.0 0.07 } #351 add at l_metatarsophalangeal_2 outside
+DEF Joe_352_l_metatarsophalangeal_2 HAnimSite { name "352_l_metatarsophalangeal_2" translation 0.095 0.0 0.07 } #352 add at l_metatarsophalangeal_2 inside
+DEF Joe_353_l_metatarsal_2 HAnimSite { name "353_l_metatarsal_2" translation 0.115 0.04 0.13 } #353 add at l_metatarsal_2 top
+DEF Joe_354_l_metatarsal_2 HAnimSite { name "354_l_metatarsal_2" translation 0.125 0.0 0.12 } #354 add at l_metatarsal_2 bottom
+DEF Joe_355_l_metatarsal_2 HAnimSite { name "355_l_metatarsal_2" translation 0.165 0.0 0.12 } #355 add at l_metatarsal_2 outside
+DEF Joe_356_l_metatarsal_2 HAnimSite { name "356_l_metatarsal_2" translation 0.087 0.0 0.122 } #356 add at l_metatarsal_2 inside
+DEF Joe_357_add_at_l_piggywentomarket_tip HAnimSite { name "357_add_at_l_piggywentomarket_tip" translation 0.090 0.012 0.188 } #357 add_at_l_piggywentomarket_tip
+DEF Joe_358_add_at_l_piggystayedhome_tip HAnimSite { name "358_add_at_l_piggystayedhome_tip" translation 0.110 0.011 0.19 } #358 add_at_l_piggystayedhome_tip
+DEF Joe_359_add_at_l_piggyateroastbeef_tip HAnimSite { name "359_add_at_l_piggyateroastbeef_tip" translation 0.128 0.011 0.185 } #359 add_at_l_piggyateroastbeef_tip
+DEF Joe_360_add_at_l_piggyhadnone_tip HAnimSite { name "360_add_at_l_piggyhadnone_tip" translation 0.142 0.011 0.178 } #360 add_at_l_piggyhadnone_tip
+DEF Joe_361_add_at_l_piggyranallthewayhomeweeweeweeweewee_tip HAnimSite { name "361_add_at_l_piggyranallthewayhomeweeweeweeweewee_tip" translation 0.154 0.010 0.168 } #361 add_at_l_piggyranallthewayhomeweeweeweeweewee_tip
+DEF Joe_362_r_knee HAnimSite { name "362_r_knee" translation -0.115 0.466 0.06 } #362 add at r_knee front
+DEF Joe_363_r_knee HAnimSite { name "363_r_knee" translation -0.115 0.466 -0.055 } #363 add r_knee_crease
+DEF Joe_364_r_femoral_lateral_epicondyle HAnimSite { name "364_r_femoral_lateral_epicondyle" translation -0.17 0.466 0.0 } #364 add r_femoral_lateral_epicondyle
+DEF Joe_365_r_femoral_medial_epicondyle HAnimSite { name "365_r_femoral_medial_epicondyle" translation -0.05 0.466 0.0 } #365 add r_femoral_medial_epicondyle
+DEF Joe_366_r_knee HAnimSite { name "366_r_knee" translation -0.17 0.3 0.0 } #366 add below r_knee
+DEF Joe_367_r_knee HAnimSite { name "367_r_knee" translation -0.06 0.3 0.0 } #367 add below r_knee
+DEF Joe_368_r_knee HAnimSite { name "368_r_knee" translation -0.1 0.3 -0.05 } #368 add below r_knee
+DEF Joe_369_r_knee HAnimSite { name "369_r_knee" translation -0.1 0.3 0.05 } #369 add below r_knee
+DEF Joe_370_r_talocrural HAnimSite { name "370_r_talocrural" translation -0.15 0.07 0.0 } #370 add at r_talocrural
+DEF Joe_371_r_talocrural HAnimSite { name "371_r_talocrural" translation -0.085 0.086 0.0125 } #371 add at r_talocrural
+DEF Joe_372_r_talocrural HAnimSite { name "372_r_talocrural" translation -0.115 0.069 -0.045 } #372 add at r_talocrural
+DEF Joe_373_r_talocrural HAnimSite { name "373_r_talocrural" translation -0.117 0.0975 0.0615 } #373 add at r_talocrural
+DEF Joe_374_r_tarsometatarsal_2 HAnimSite { name "374_r_tarsometatarsal_2" translation -0.1375 0.006 -0.03 } #374 add at r_tarsometatarsal_2 outside
+DEF Joe_375_r_tarsometatarsal_2 HAnimSite { name "375_r_tarsometatarsal_2" translation -0.095 0.006 -0.03 } #375 add at r_tarsometatarsal_2 inside
+DEF Joe_376_r_tarsometatarsal_2 HAnimSite { name "376_r_tarsometatarsal_2" translation -0.095 0.006 -0.03 } #376 add at r_tarsometatarsal_2 rear
+DEF Joe_377_r_metatarsophalangeal_2 HAnimSite { name "377_r_metatarsophalangeal_2" translation -0.115 0.06 0.1 } #377 add at r_metatarsophalangeal_2 up
+DEF Joe_378_r_metatarsophalangeal_2 HAnimSite { name "378_r_metatarsophalangeal_2" translation -0.115 0.0 0.07 } #378 add at r_metatarsophalangeal_2 down
+DEF Joe_379_r_metatarsophalangeal_2 HAnimSite { name "379_r_metatarsophalangeal_2" translation -0.165 0.0 0.07 } #379 add at r_metatarsophalangeal_2 outside
+DEF Joe_380_r_metatarsophalangeal_2 HAnimSite { name "380_r_metatarsophalangeal_2" translation -0.095 0.0 0.07 } #380 add at r_metatarsophalangeal_2 inside
+DEF Joe_381_r_tarsal_distal_interphalangeal_2 HAnimSite { name "381_r_tarsal_distal_interphalangeal_2" translation -0.115 0.04 0.13 } #381 add at r_tarsal_distal_interphalangeal_2 top
+DEF Joe_382_r_tarsal_distal_interphalangeal_2 HAnimSite { name "382_r_tarsal_distal_interphalangeal_2" translation -0.125 0.0 0.12 } #382 add at r_tarsal_distal_interphalangeal_2 bottom
+DEF Joe_383_r_tarsal_distal_interphalangeal_2 HAnimSite { name "383_r_tarsal_distal_interphalangeal_2" translation -0.165 0.0 0.12 } #383 add at r_tarsal_distal_interphalangeal_2 outside
+DEF Joe_384_r_tarsal_distal_interphalangeal_2 HAnimSite { name "384_r_tarsal_distal_interphalangeal_2" translation -0.087 0.0 0.122 } #384 add at r_tarsal_distal_interphalangeal_2 inside
+DEF Joe_385_add_at_r_piggywenttomarket_tip HAnimSite { name "385_add_at_r_piggywenttomarket_tip" translation -0.090 0.012 0.188 } #385 add_at_r_piggywenttomarket_tip
+DEF Joe_386_add_at_r_piggystayedhome_tip HAnimSite { name "386_add_at_r_piggystayedhome_tip" translation -0.110 0.011 0.19 } #386 add_at_r_piggystayedhome_tip
+DEF Joe_387_add_at_r_piggyateroastbeef_tip HAnimSite { name "387_add_at_r_piggyateroastbeef_tip" translation -0.128 0.011 0.185 } #387 add_at_r_piggyateroastbeef_tip
+DEF Joe_388_add_at_r_piggyhadnone_tip HAnimSite { name "388_add_at_r_piggyhadnone_tip" translation -0.142 0.011 0.178 } #388 add_at_r_piggyhadnone_tip
+DEF Joe_389_add_at_r_piggyranallthewayhomeweeweeweeweeweeweeweeweeweewee_tip HAnimSite { name "389_add_at_r_piggyranallthewayhomeweeweeweeweeweeweeweeweeweewee_tip" translation -0.154 0.010 0.168 } #389 add_at_r_piggyranallthewayhomeweeweeweeweeweeweeweeweeweewee_tip
+
+]
+
+ }
+
+]}
+
+DEF Ex_Time TimeSensor { cycleInterval 3.73 loop TRUE }
+
+# Ex_Animation Group
+
+DEF r_talocruralRotInterp OrientationInterpolator { key [ 0, 0.25 0.5, 0.75 1 ] keyValue [ -1 0 0 1, 0 0 1 0, 1 0 0 1, 1 0 0 1, 1 0 0 0.5 ] }
+DEF r_kneeRotInterp OrientationInterpolator { key [ 0, 0.25 0.5, 0.75 1 ] keyValue [ 1 0 0 0.1, 0 0 1 0, 1 0 0 1, 1 0 0 1, 1 0 0 1.5 ] }
+DEF r_hipRotInterp OrientationInterpolator { key [ 0, 0.25 0.5, 0.75 1 ] keyValue [ 1 0 0 1, 1 0 0 1, -1 0 0 1, -1 0 0 1, -1 0 0 1 ] }
+
+DEF l_talocruralRotInterp OrientationInterpolator { key [ 0, 0.25, 1 ]
+keyValue [ -1 0 0 1, 0 0 1 0, 1 0 0 1 ] }
+DEF l_kneeRotInterp OrientationInterpolator { key [ 0, 0.2 0.35 0.5 1 ]
+keyValue [ 1 0 0 1, 0 0 1 0, 0 0 1 0.2, 1 0 1 0.5, 1 0 0 1.4 ] }
+DEF l_hipRotInterp OrientationInterpolator { key [ 0, 0.1 0.3, 0.45, 1 ]
+keyValue [ -1 0 0 1.5, -1 0 0 1, 0 0 1 0, 1 0 0 0.5, 1 0 0 1 ] }
+
+DEF r_radiocarpalRotInterp OrientationInterpolator { key [ 0, 0.5, 0.7 1 ]
+keyValue [ 0 1 0 0.3, 0 0 1 0, 0 0 -1 1, 0 -1 0 0.3 ] }
+DEF r_elbowRotInterp OrientationInterpolator { key [ 0, 0.5, 1 ]
+keyValue [ -1 0 0 3, -1 0 0 0.75, -1 -1 0 0.5 ] }
+DEF r_shoulderRotInterp OrientationInterpolator { key [ 0, 0.5, 1 ]
+keyValue [ 0 0 -1 2.5, 0 0 -1 1.5, 0 0 -1 1.75 ] }
+DEF l_radiocarpalRotInterp OrientationInterpolator { key [ 0, 0.4, 0.8 1 ]
+keyValue [ 0 0 1 0, 0 1 0 1.3, 0 -0.5 1 1.3, 0 0 1 0 ] }
+DEF l_elbowRotInterp OrientationInterpolator { key [ 0, 0.5, 1 ]
+keyValue [ -1 0 0 3, -1 0 0 0.75, -1 -1 0 0.5 ] }
+DEF l_shoulderRotInterp OrientationInterpolator { key [ 0, 0.4, 1 ]
+keyValue [ 0 0 1 0, 0 0 1 1.5, -1 0 1 1.75 ] }
+
+DEF skullRotInterp OrientationInterpolator { key [ 0, 0.2, 0.75, 1 ]
+keyValue [ 0 -1 0 0.5, 0 0 1 0, 0 0 1 0, 0 1 0 0.35 ] }
+DEF neckRotInterp OrientationInterpolator { key [ 0, 0.3, 0.4, 1 ]
+keyValue [ 1 0 1 0.25, -1 0 -1 0.35, 1 0 0 0.75, 1 0 1 0.5 ] }
+
+DEF lower_bodyRotInterp OrientationInterpolator { key [ 0, 0.5, 1 ] keyValue [ 0 0 1 0, 0 0 1 0, 0 0 1 0 ] }
+DEF upper_bodyRotInterp OrientationInterpolator { key [ 0, 0.5, 1 ] keyValue [ 0 0 1 0, 0 0 1 0, 0 0 1 0 ] }
+
+DEF whole_bodyRotInterp OrientationInterpolator { key [ 0, 0.1, 0.4, 0.60, 1 ]
+keyValue [ 1 0 0 0.5, 1 0 0 0.5, -1 0 0 0.1, -1 0 0 0.5, -1 0 0 0.5 ] }
+DEF whole_bodyTransInterp PositionInterpolator { key [ 0, 0.2, 0.6, 1 ]
+keyValue [ 1 0.3 -1, 0.4 -0.04 -0.4, -0.18 0.1 0 -0.2 0.15 0.15 ] }
+
+# ex
+ROUTE Ex_Time.fraction_changed TO r_talocruralRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO r_kneeRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO r_hipRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO l_talocruralRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO l_kneeRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO l_hipRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO lower_bodyRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO r_radiocarpalRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO r_elbowRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO r_shoulderRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO l_radiocarpalRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO l_elbowRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO l_shoulderRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO skullRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO neckRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO upper_bodyRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO whole_bodyRotInterp.set_fraction
+ROUTE Ex_Time.fraction_changed TO whole_bodyTransInterp.set_fraction
+
+ROUTE r_talocruralRotInterp.value_changed TO Joe_r_talocrural.set_rotation
+ROUTE r_kneeRotInterp.value_changed TO Joe_r_knee.set_rotation
+ROUTE r_hipRotInterp.value_changed TO Joe_r_hip.set_rotation
+ROUTE l_talocruralRotInterp.value_changed TO Joe_l_talocrural.set_rotation
+ROUTE l_kneeRotInterp.value_changed TO Joe_l_knee.set_rotation
+ROUTE l_hipRotInterp.value_changed TO Joe_l_hip.set_rotation
+ROUTE lower_bodyRotInterp.value_changed TO Joe_sacroiliac.set_rotation
+ROUTE r_radiocarpalRotInterp.value_changed TO Joe_r_radiocarpal.set_rotation
+ROUTE r_elbowRotInterp.value_changed TO Joe_r_elbow.set_rotation
+ROUTE r_shoulderRotInterp.value_changed TO Joe_r_shoulder.set_rotation
+ROUTE l_radiocarpalRotInterp.value_changed TO Joe_l_radiocarpal.set_rotation
+ROUTE l_elbowRotInterp.value_changed TO Joe_l_elbow.set_rotation
+ROUTE l_shoulderRotInterp.value_changed TO Joe_l_shoulder.set_rotation
+ROUTE skullRotInterp.value_changed TO Joe_skullbase.set_rotation
+ROUTE neckRotInterp.value_changed TO Joe_vc4.set_rotation
+ROUTE upper_bodyRotInterp.value_changed TO Joe_vl1.set_rotation
+ROUTE whole_bodyRotInterp.value_changed TO Joe_humanoid_root.set_rotation
+ROUTE whole_bodyTransInterp.value_changed TO Joe_humanoid_root.set_translation
+
+
+
+DEF SBall Transform { translation 0 .1 0 scale 0.23 0.23 0.23
+ children [
+  Shape {
+   appearance Appearance {
+    texture ImageTexture { url [ "bodytexture28.png" ] }
+    material Material { emissiveColor 1 1 1 diffuseColor 0 0.8353 0 ambientIntensity 0.2 specularColor 0 0.6849 0 shininess 0.2 }
+   }
+   geometry DEF ball IndexedFaceSet { coord Coordinate {
+    point [ 0 0.4675 0 0 0.4049 -0.2338 -0.1169 0.4049 -0.2024 -0.2024 0.4049 -0.1169 -0.2338 0.4049 0 -0.2024 0.4049 0.1169 -0.1169 0.4049 0.2024 0 0.4049 0.2338 0.1169 0.4049 0.2024 0.2024 0.4049 0.1169 0.2338 0.4049 0 0.2024 0.4049 -0.1169 0.1169 0.4049 -0.2024 0 0.2338 -0.4049 -0.2024 0.2338 -0.3506 -0.3506 0.2338 -0.2024 -0.4049 0.2338 0 -0.3506 0.2338 0.2024 -0.2024 0.2338 0.3506 0 0.2338 0.4049 0.2024 0.2338 0.3506 0.3506 0.2338 0.2024 0.4049 0.2338 0 0.3506 0.2338 -0.2024 0.2024 0.2338 -0.3506 0 0 -0.4675 -0.2338 0 -0.4049 -0.4049 0 -0.2338 -0.4675 0 0 -0.4049 0 0.2338 -0.2338 0 0.4049 0 0 0.4675 0.2338 0 0.4049 0.4049 0 0.2338 0.4675 0 0 0.4049 0 -0.2338 0.2338 0 -0.4049 0 -0.2338 -0.4049 -0.2024 -0.2338 -0.3506 -0.3506 -0.2338 -0.2024 -0.4049 -0.2338 0 -0.3506 -0.2338 0.2024 -0.2024 -0.2338 0.3506 0 -0.2338 0.4049 0.2024 -0.2338 0.3506 0.3506 -0.2338 0.2024 0.4049 -0.2338 0 0.3506 -0.2338 -0.2024 0.2024 -0.2338 -0.3506 0 -0.4049 -0.2338 -0.1169 -0.4049 -0.2024 -0.2024 -0.4049 -0.1169 -0.2338 -0.4049 0 -0.2024 -0.4049 0.1169 -0.1169 -0.4049 0.2024 0 -0.4049 0.2338 0.1169 -0.4049 0.2024 0.2024 -0.4049 0.1169 0.2338 -0.4049 0 0.2024 -0.4049 -0.1169 0.1169 -0.4049 -0.2024 0 -0.4675 0 ]}
+     coordIndex [ 0 1 2 -1 0 2 3 -1 0 3 4 -1 0 4 5 -1 0 5 6 -1 0 6 7 -1 0 7 8 -1 0 8 9 -1 0 9 10 -1 0 10 11 -1 0 11 12 -1 0 12 1 -1 1 13 14 -1 1 14 2 -1 2 14 15 -1 2 15 3 -1 3 15 16 -1 3 16 4 -1 4 16 17 -1 4 17 5 -1 5 17 18 -1 5 18 6 -1 6 18 19 -1 6 19 7 -1 7 19 20 -1 7 20 8 -1 8 20 21 -1 8 21 9 -1 9 21 22 -1 9 22 10 -1 10 22 23 -1 10 23 11 -1 11 23 24 -1 11 24 12 -1 12 24 13 -1 12 13 1 -1 13 25 26 -1 13 26 14 -1 14 26 27 -1 14 27 15 -1 15 27 28 -1 15 28 16 -1 16 28 29 -1 16 29 17 -1 17 29 30 -1 17 30 18 -1 18 30 31 -1 18 31 19 -1 19 31 32 -1 19 32 20 -1 20 32 33 -1 20 33 21 -1 21 33 34 -1 21 34 22 -1 22 34 35 -1 22 35 23 -1 23 35 36 -1 23 36 24 -1 24 36 25 -1 24 25 13 -1 25 37 38 -1 25 38 26 -1 26 38 39 -1 26 39 27 -1 27 39 40 -1 27 40 28 -1 28 40 41 -1 28 41 29 -1 29 41 42 -1 29 42 30 -1 30 42 43 -1 30 43 31 -1 31 43 44 -1 31 44 32 -1 32 44 45 -1 32 45 33 -1 33 45 46 -1 33 46 34 -1 34 46 47 -1 34 47 35 -1 35 47 48 -1 35 48 36 -1 36 48 37 -1 36 37 25 -1 37 49 50 -1 37 50 38 -1 38 50 51 -1 38 51 39 -1 39 51 52 -1 39 52 40 -1 40 52 53 -1 40 53 41 -1 41 53 54 -1 41 54 42 -1 42 54 55 -1 42 55 43 -1 43 55 56 -1 43 56 44 -1 44 56 57 -1 44 57 45 -1 45 57 58 -1 45 58 46 -1 46 58 59 -1 46 59 47 -1 47 59 60 -1 47 60 48 -1 48 60 49 -1 48 49 37 -1 61 50 49 -1 61 51 50 -1 61 52 51 -1 61 53 52 -1 61 54 53 -1 61 55 54 -1 61 56 55 -1 61 57 56 -1 61 58 57 -1 61 59 58 -1 61 60 59 -1 61 49 60 -1 ]}
+  }
+  DEF ballView Viewpoint { description "ball View" centerOfRotation 0 0 0
+  }
+ ]
+}
+
+DEF ballTransInterp PositionInterpolator { key [ 0 0.40 0.409 1 ]
+keyValue [
+-1 0.4 -1
+0 0.07 0
+0.05 0.06 0.05
+2 4 10 ] }
+ROUTE Ex_Time.fraction_changed TO ballTransInterp.set_fraction
+ROUTE ballTransInterp.value_changed TO SBall.set_translation
+
+DEF ballRotInterp OrientationInterpolator { key [
+0, 0.40, 0.41, 0.71 1 ]
+keyValue [ 1 0 1 0.25, -1 0 -1 1.35, -1 1 -1 3.35,-1 0.2 -1 3, -1 0.2 -1 3 ] }
+ROUTE Ex_Time.fraction_changed TO ballRotInterp.set_fraction
+ROUTE ballRotInterp.value_changed TO SBall.set_rotation
+
+
+DEF scenecordsys Transform { scale 0.275 0.275 0.275
+ children [
+  Inline { url ["JointCoordinateAxes.x3dv"] }
+ ]
+}
+DEF Circle0 Transform { scale 1.175 1 1.175
+ children [
+  Shape { appearance Appearance { # Orbit Path Line
+    material Material { diffuseColor 0.9 0 0.7 emissiveColor 0.424956 0.483976 1 } }
+   geometry DEF Orbit1 IndexedLineSet { coord Coordinate {
+    point [ 1 0 0, 0.995 0 -0.105, 0.979 0 -0.208, 0.951 0 -0.309, 0.914 0 -0.407, 0.866 0 -0.5, 0.809 0 -0.588, 0.743 0 -0.669, 0.669 0 -0.743, 0.588 0 -0.809, 0.5 0 -0.866, 0.407 0 -0.914, 0.309 0 -0.951, 0.208 0 -0.978, 0.105 0 -0.995, 0 0 -1,  -0.105 0 -0.994522, -0.208 0 -0.978, -0.309 0 -0.951, -0.407 0 -0.914, -0.5 0 -0.866, -0.588 0 -0.809, -0.669 0 -0.743, -0.743 0 -0.669, -0.809 0 -0.588, -0.866 0 -0.5, -0.914 0 -0.407, -0.951 0 -0.309, -0.978 0 -0.208, -0.995 0 -0.105, -1 0 0, -0.995 0 0.105, -0.978 0 0.208, -0.951 0 0.309, -0.914 0 0.407, -0.866 0 0.5, -0.809 0 0.588, -0.743 0 0.669, -0.669 0 0.743, -0.588 0 0.809, -0.5 0 0.866, -0.407 0 0.914, -0.309 0 0.951, -0.208 0 0.978, -0.105 0 0.995, 0 0 1, 0.105 0 0.995, 0.208 0 0.978, 0.309 0 0.951, 0.407 0 0.914, 0.5 0 0.866, 0.588 0 0.809, 0.669 0 0.743, 0.743 0 0.669, 0.809 0 0.588, 0.866 0 0.5, 0.914 0 0.407, 0.951 0 0.309, 0.978 0 0.208, 0.995 0 0.104, 1 0 0 ]}
+     coordIndex [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, -1 ]}
+  }
+ ]
+}
+DEF Circle1 Transform { scale 0.5 1 0.5
+ children [
+  Shape { appearance Appearance { # Orbit Path Line
+   material Material { diffuseColor 0.9 0 0.7 emissiveColor 0.424956 0.483976 1 } }
+   geometry USE Orbit1
+   }
+  ]
+}
+DEF Circle2 Transform { scale 0.25 1 0.25
+ children [
+  Shape { appearance Appearance { # Orbit Path Line
+    material Material { diffuseColor 0.9 0 0.7 emissiveColor 0.424956 0.483976 1 } }
+   geometry USE Orbit1
+  }
+ ]
+}
