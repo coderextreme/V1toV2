@@ -4,6 +4,7 @@
 # If your V1 files use non-standard names, you'll need to add them.
 
 joint_map_list = [
+("chin", "menton"),
 ("humanoid_root", "humanoid_root"),
 ("HumanoidRoot", "humanoid_root"),
 ("SIJ", "sacroiliac"),
@@ -263,7 +264,6 @@ joint_map_list = [
 ("belly button", "navel"),
 ("l_canthus", "l_ectocanthus"),
 ("r_canthus", "r_ectocanthus"),
-("chin", "menton"),
 ("mesosternum", "mesosternale"),
 ("opisthocranion", "opisthocranion"),
 ("l_knee_crease", "l_knee_crease"),
@@ -393,7 +393,6 @@ joint_map_list = [
 ("l_scapula", "l_scapula"),
 ("l_upperarm", "l_upperarm"),
 ("l_forearm", "l_forearm"),
-("l_hand", "l_carpal"),
 ("l_trapezium", "l_trapezium"),
 ("l_thumb_metacarpal", "l_metacarpal_1"),
 ("l_thumb_proximal", "l_carpal_proximal_phalanx_1"),
@@ -424,7 +423,6 @@ joint_map_list = [
 ("r_scapula", "r_scapula"),
 ("r_upperarm", "r_upperarm"),
 ("r_forearm", "r_forearm"),
-("r_hand", "r_carpal"),
 ("r_trapezium", "r_trapezium"),
 ("r_thumb_metacarpal", "r_metacarpal_1"),
 ("r_thumb_proximal", "r_carpal_proximal_phalanx_1"),
@@ -451,6 +449,8 @@ joint_map_list = [
 ("r_pinky_proximal", "r_carpal_proximal_phalanx_5"),
 ("r_pinky_middle", "r_carpal_middle_phalanx_5"),
 ("r_pinky_distal", "r_carpal_distal_phalanx_5"),
+("l_hand", "l_carpal"),
+("r_hand", "r_carpal"),
 ]
 
 # Sort by V1 name length, descending

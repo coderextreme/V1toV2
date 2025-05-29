@@ -4347,6 +4347,17 @@ s/\(ROUTE[ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*Joe_\)r_hi
 s/\(ROUTE[ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*\)r_hip\(RotInterp\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1r_hip\2/g
 s/\(#.*\)r_hip/\1r_hip/g
 
+# Mapping for: chin -> menton
+s/\(DEF[ 	]*Joe_\)chin/\1menton/g
+s/\(DEF[ 	]*\)chin/\1menton/g
+s/\(USE[ 	]*Joe_\)chin/\1menton/g
+s/\(name[ 	]*"\)chin"/\1menton"/g
+s/\(ROUTE[ 	]*\)chin\(\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1menton\2/g
+s/\(ROUTE[ 	]*\)chin\(RotInterp\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1menton\2/g
+s/\(ROUTE[ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*Joe_\)chin\(\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1menton\2/g
+s/\(ROUTE[ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*\)chin\(RotInterp\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1menton\2/g
+s/\(#.*\)chin/\1menton/g
+
 # Mapping for: vt12 -> vt12
 s/\(DEF[ 	]*Joe_\)vt12/\1vt12/g
 s/\(DEF[ 	]*\)vt12/\1vt12/g
@@ -4379,17 +4390,6 @@ s/\(ROUTE[ 	]*\)vt10\(RotInterp\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*[^
 s/\(ROUTE[ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*Joe_\)vt10\(\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1vt10\2/g
 s/\(ROUTE[ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*\)vt10\(RotInterp\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1vt10\2/g
 s/\(#.*\)vt10/\1vt10/g
-
-# Mapping for: chin -> menton
-s/\(DEF[ 	]*Joe_\)chin/\1menton/g
-s/\(DEF[ 	]*\)chin/\1menton/g
-s/\(USE[ 	]*Joe_\)chin/\1menton/g
-s/\(name[ 	]*"\)chin"/\1menton"/g
-s/\(ROUTE[ 	]*\)chin\(\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1menton\2/g
-s/\(ROUTE[ 	]*\)chin\(RotInterp\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1menton\2/g
-s/\(ROUTE[ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*Joe_\)chin\(\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1menton\2/g
-s/\(ROUTE[ 	]*[^.][^.]*\.[a-zA-Z0-9_][a-zA-Z0-9_]*[ 	][ 	]*TO[ 	][ 	]*\)chin\(RotInterp\.[a-zA-Z0-9_][a-zA-Z0-9_]*\)/\1menton\2/g
-s/\(#.*\)chin/\1menton/g
 
 # Mapping for: head -> skull
 s/\(DEF[ 	]*Joe_\)head/\1skull/g

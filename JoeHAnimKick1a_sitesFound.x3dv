@@ -780,7 +780,7 @@ DEF Joe_174_60 HAnimSite { name "174_60" translation 0.21 0.695 -0.015 } #174 60
 DEF Joe_175_1 HAnimSite { name "175_1" translation 0.19 0.695 -0.015 } #175 1
 DEF Joe_176_2 HAnimSite { name "176_2" translation 0.2 0.695 -0.025 } #176 2
 DEF Joe_177_3 HAnimSite { name "177_3" translation 0.2 0.695 -0.005 } #177 3
-DEF Joe_178_l_carpal_proximal_interphalangeal_3 HAnimSite { name "178_l_carpal_proximal_interphalangeal_3" translation 0.2 0.685 -0.015 } #178 4 # l_carpal_proximal_interphalangeal_3
+DEF Joe_178_l_carpal HAnimSite { name "178_l_carpal" translation 0.2 0.685 -0.015 } #178 4 # l_carpal_proximal_interphalangeal_3
 DEF Joe_179_5 HAnimSite { name "179_5" translation 0.215 0.74 -0.04 } #179 5
 DEF Joe_180_6 HAnimSite { name "180_6" translation 0.185 0.74 -0.04 } #180 6
 DEF Joe_181_7 HAnimSite { name "181_7" translation 0.2 0.74 -0.055 } #181 7
@@ -806,7 +806,7 @@ DEF Joe_200_6 HAnimSite { name "200_6" translation 0.21 0.695 -0.065 } #200 6
 DEF Joe_201_7 HAnimSite { name "201_7" translation 0.19 0.695 -0.065 } #201 7
 DEF Joe_202_8 HAnimSite { name "202_8" translation 0.2 0.695 -0.075 } #202 8
 DEF Joe_203_9 HAnimSite { name "203_9" translation 0.2 0.695 -0.055 } #203 9
-DEF Joe_204_l_carpal HAnimSite { name "204_l_carpal" translation 0.2 0.685 -0.065 } #204 90 # l_carpal_proximal_interphalangeal_5
+DEF Joe_204_l_carpal_proximal_interphalangeal_5 HAnimSite { name "204_l_carpal_proximal_interphalangeal_5" translation 0.2 0.685 -0.065 } #204 90 # l_carpal_proximal_interphalangeal_5
 DEF Joe_205_1 HAnimSite { name "205_1" translation 0.211 0.755 -0.085 } #205 1
 DEF Joe_206_2 HAnimSite { name "206_2" translation 0.189 0.755 -0.085 } #206 2
 DEF Joe_207_3 HAnimSite { name "207_3" translation 0.2 0.755 -0.0952 } #207 3
@@ -896,7 +896,7 @@ DEF Joe_290_60 HAnimSite { name "290_60" translation -0.21 0.695 -0.015 } #290 6
 DEF Joe_291_1 HAnimSite { name "291_1" translation -0.19 0.695 -0.015 } #291 1
 DEF Joe_292_2 HAnimSite { name "292_2" translation -0.2 0.695 -0.025 } #292 2
 DEF Joe_293_3 HAnimSite { name "293_3" translation -0.2 0.695 -0.005 } #293 3
-DEF Joe_294_r_carpal HAnimSite { name "294_r_carpal" translation -0.2 0.685 -0.015 } #294 4 # r_carpal_proximal_interphalangeal_3
+DEF Joe_294_r_carpal_proximal_interphalangeal_3 HAnimSite { name "294_r_carpal_proximal_interphalangeal_3" translation -0.2 0.685 -0.015 } #294 4 # r_carpal_proximal_interphalangeal_3
 DEF Joe_295_5 HAnimSite { name "295_5" translation -0.215 0.74 -0.04 } #295 5
 DEF Joe_296_6 HAnimSite { name "296_6" translation -0.185 0.74 -0.04 } #296 6
 DEF Joe_297_7 HAnimSite { name "297_7" translation -0.2 0.74 -0.055 } #297 7
