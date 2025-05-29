@@ -1,9 +1,9 @@
 # Python to help generate the sed script map
 # Based on HAnim 1.1 and HAnim 2.0 naming conventions
-# This map tries to cover standard joints.
+# This map tries to cover standard skeleton.
 # If your V1 files use non-standard names, you'll need to add them.
 
-joint_map_list = [
+skeleton_map_list = [
 ("chin", "menton"),
 ("humanoid_root", "humanoid_root"),
 ("HumanoidRoot", "humanoid_root"),
@@ -457,16 +457,16 @@ joint_map_list = [
 # This is CRITICAL to prevent partial replacements (e.g., "l_hip" replacing part of "l_hip_rotation" if not handled)
 # Though in this specific HAnim case, v1 names are usually distinct enough that alphabetical is okay,
 # but length-based is safer for general text replacement.
-sorted_joint_map = sorted(joint_map_list, key=lambda x: len(x[0]), reverse=True)
+sorted_skeleton_map = sorted(skeleton_map_list, key=lambda x: len(x[0]), reverse=True)
 
 # --- Generate the sed script ---
 sed_script_path = "hanim_v1_to_v2_commands.sed"
 with open(sed_script_path, "w") as f:
-    f.write("# GNU sed script to map HAnim v1 to v2 joint names\n")
+    f.write("# GNU sed script to map HAnim v1 to v2 skeleton names\n")
     f.write("# Generated script - review carefully before use.\n")
     f.write("# IMPORTANT: Backup your VRML files before running this.\n\n")
 
-    for v1_name, v2_name in sorted_joint_map:
+    for v1_name, v2_name in sorted_skeleton_map:
         # Escape potential regex characters in v1_name for safety, though HAnim names are usually simple.
         # For sed, basic regex special chars are ., *, [, ], ^, $
         # v1_name_sed_escaped = v1_name.replace('.', '\\.').replace('*', '\\*') # etc.

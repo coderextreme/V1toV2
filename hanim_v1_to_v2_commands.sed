@@ -1,4 +1,4 @@
-# GNU sed script to map HAnim v1 to v2 joint names
+# GNU sed script to map HAnim v1 to v2 skeleton names
 # Generated script - review carefully before use.
 # IMPORTANT: Backup your VRML files before running this.
 
