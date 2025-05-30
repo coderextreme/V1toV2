@@ -41,7 +41,7 @@ while (<STDIN>) {
 		if ($wasmapped == 0) {
 				$skeleton =~ s/ /_/g;
 				$skeleton =~ s/#//g;
-				$sites .= "DEF Joe_".$sitenumber."_".$skeleton." HAnimSite { name \"$sitenumber".'_'."$skeleton\" translation $x $y $z } #$sitenumber $skeleton\n";
+				# $sites .= "DEF Joe_".$sitenumber."_".$skeleton." HAnimSite { name \"$sitenumber".'_'."$skeleton\" translation $x $y $z } #$sitenumber $skeleton\n";
 				print "$line # not mapped properly\n";
 		}
 		$wasmapped = 0;
